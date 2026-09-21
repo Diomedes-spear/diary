@@ -5,9 +5,9 @@
 
   const UI = {
     ja: {
-      title: '日記',
-      subtitle: "Naomichi's Diary",
-      closing: '— 記録終わり —',
+      title: "Naomichi's Diary",
+      subtitle: '複雑に考えてしまう男の日記',
+      closing: '— ご覧いただきありがとうございました —',
       empty: 'まだ記録がありません。',
       notFound: 'その記録は見つからなかった。',
       backLink: '← 一覧に戻る',
@@ -17,9 +17,9 @@
       fallbackNote: null // never shown in Japanese, it's the source language
     },
     en: {
-      title: 'Diary',
-      subtitle: "Naomichi's Diary",
-      closing: '— end of record —',
+      title: "Naomichi's Diary",
+      subtitle: 'The diary of a man who overthinks everything',
+      closing: '— Thank you for visiting —',
       empty: 'No entries yet.',
       notFound: 'That entry could not be found.',
       backLink: '← Back to list',
@@ -29,9 +29,9 @@
       fallbackNote: 'Not yet translated — showing the Japanese original.'
     },
     uk: {
-      title: 'Щоденник',
-      subtitle: "Naomichi's Diary",
-      closing: '— кінець запису —',
+      title: "Naomichi's Diary",
+      subtitle: 'Щоденник чоловіка, який усе надто ускладнює',
+      closing: '— Дякуємо, що завітали —',
       empty: 'Записів поки немає.',
       notFound: 'Цей запис не знайдено.',
       backLink: '← Назад до списку',
