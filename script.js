@@ -1,7 +1,7 @@
 (function () {
   const root = document.getElementById('entries');
 
-  // ---------- language state ----------
+  // ---------- language state (unchanged) ----------
 
   function getCookie(name) {
     const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
@@ -9,7 +9,6 @@
   }
 
   function currentLang() {
-    // Google's cookie looks like "/ja/en" once a translation is active
     const raw = getCookie('googtrans');
     if (!raw) return 'ja';
     const parts = raw.split('/').filter(Boolean);
@@ -26,7 +25,7 @@
     location.reload();
   }
 
-  // ---------- rendering ----------
+  // ---------- helpers ----------
 
   function escapeHTML(str) {
     return str
@@ -47,9 +46,30 @@
     return String(n).padStart(3, '0');
   }
 
-  function render(list) {
-    const lang = currentLang();
+  function displayed(entry, lang) {
+    const manual = entry.translations && entry.translations[lang];
+    return {
+      title: manual ? manual.title : entry.title,
+      body: manual ? manual.body : entry.body,
+      isManual: Boolean(manual)
+    };
+  }
 
+  function excerpt(body, maxChars) {
+    const firstPara = body.trim().split(/\n\s*\n/)[0] || '';
+    const flat = firstPara.replace(/\s+/g, '');
+    return flat.length > maxChars ? flat.slice(0, maxChars) + '…' : flat;
+  }
+
+  // entryNo counts up from the oldest entry (position from the end of
+  // the array), so numbers stay stable as new entries are prepended.
+  function entryNoFor(idx, total) {
+    return total - idx;
+  }
+
+  // ---------- list (top) view ----------
+
+  function renderList(list, lang) {
     if (!list || list.length === 0) {
       root.innerHTML = '<p class="empty">まだ記録がありません。</p>';
       return;
@@ -59,52 +79,101 @@
 
     root.innerHTML = list
       .map((entry, idx) => {
-        const entryNo = pad(total - idx);
+        const no = entryNoFor(idx, total);
+        const { title, body, isManual } = displayed(entry, lang);
+        const status = entry.status ? escapeHTML(entry.status) : '記録済';
         const delay = Math.min(idx * 0.06, 0.3);
 
-        // If this entry has a hand-checked translation for the active
-        // language, use it and mark the card "notranslate" so Google's
-        // engine leaves it alone. Otherwise leave the original Japanese
-        // in place and let Google auto-translate it.
-        const manual = entry.translations && entry.translations[lang];
-        const displayTitle = manual ? manual.title : entry.title;
-        const displayBody = manual ? manual.body : entry.body;
-        const notranslateClass = manual ? ' notranslate' : '';
-
-        const title = displayTitle
-          ? `<h2 class="entry-title">${escapeHTML(displayTitle)}</h2>`
-          : '';
-        const status = entry.status ? escapeHTML(entry.status) : '記録済';
-
         return `
-          <article class="entry${notranslateClass}" style="animation-delay:${delay}s">
+          <article class="entry entry--list${isManual ? ' notranslate' : ''}" style="animation-delay:${delay}s">
             <div class="log-line">
-              <span class="log-no">ENTRY&nbsp;//&nbsp;${entryNo}</span>
+              <span class="log-no">ENTRY&nbsp;//&nbsp;${pad(no)}</span>
               <span class="sep">·</span>
               <span>${escapeHTML(entry.date || '')}</span>
               <span class="sep">·</span>
               <span>状態: ${status}</span>
             </div>
-            ${title}
-            <div class="entry-body">${paragraphs(displayBody || '')}</div>
+            <a class="entry-title-link" href="#/entry/${no}">${escapeHTML(title || '(無題)')}</a>
+            <p class="entry-excerpt">${escapeHTML(excerpt(body || '', 70))}</p>
           </article>
         `;
       })
       .join('');
   }
 
+  // ---------- single-entry (detail) view ----------
+
+  function renderEntry(list, no, lang) {
+    const total = list.length;
+    const idx = list.findIndex((_, i) => entryNoFor(i, total) === no);
+
+    if (idx === -1) {
+      root.innerHTML = `
+        <p class="empty">その記録は見つからなかった。</p>
+        <a class="back-link" href="#/">← 一覧に戻る</a>
+      `;
+      return;
+    }
+
+    const entry = list[idx];
+    const { title, body, isManual } = displayed(entry, lang);
+    const status = entry.status ? escapeHTML(entry.status) : '記録済';
+
+    root.innerHTML = `
+      <a class="back-link" href="#/">← 一覧に戻る</a>
+      <article class="entry${isManual ? ' notranslate' : ''}">
+        <div class="log-line">
+          <span class="log-no">ENTRY&nbsp;//&nbsp;${pad(no)}</span>
+          <span class="sep">·</span>
+          <span>${escapeHTML(entry.date || '')}</span>
+          <span class="sep">·</span>
+          <span>状態: ${status}</span>
+        </div>
+        <h2 class="entry-title">${escapeHTML(title || '(無題)')}</h2>
+        <div class="entry-body">${paragraphs(body || '')}</div>
+      </article>
+    `;
+  }
+
+  // ---------- router ----------
+
+  function parseHash() {
+    const h = location.hash.replace(/^#\/?/, '');
+    const m = h.match(/^entry\/(\d+)$/);
+    if (m) return { view: 'entry', no: parseInt(m[1], 10) };
+    return { view: 'list' };
+  }
+
+  function route() {
+    const lang = currentLang();
+    const list = typeof ENTRIES !== 'undefined' ? ENTRIES : [];
+    const state = parseHash();
+
+    if (state.view === 'entry') {
+      renderEntry(list, state.no, lang);
+    } else {
+      renderList(list, lang);
+    }
+
+    window.scrollTo(0, 0);
+    syncLangButtons(lang);
+  }
+
   // ---------- language switch buttons ----------
 
-  function wireLangButtons() {
-    const lang = currentLang();
+  function syncLangButtons(lang) {
     document.querySelectorAll('.lang-btn').forEach((btn) => {
-      if (btn.dataset.lang === lang) btn.classList.add('is-active');
-      else btn.classList.remove('is-active');
+      btn.classList.toggle('is-active', btn.dataset.lang === lang);
+    });
+  }
 
+  function wireLangButtons() {
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
       btn.addEventListener('click', () => doGTranslate(btn.dataset.lang));
     });
   }
 
-  render(typeof ENTRIES !== 'undefined' ? ENTRIES : []);
+  window.addEventListener('hashchange', route);
   wireLangButtons();
+  route();
 })();
