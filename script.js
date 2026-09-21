@@ -1,28 +1,56 @@
 (function () {
   const root = document.getElementById('entries');
 
-  // ---------- language state (unchanged) ----------
+  // ---------- UI strings (site chrome, not diary content) ----------
 
-  function getCookie(name) {
-    const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
-    return match ? decodeURIComponent(match[1]) : '';
-  }
+  const UI = {
+    ja: {
+      title: '日記',
+      subtitle: '個人の記録',
+      closing: '— 記録終わり —',
+      empty: 'まだ記録がありません。',
+      notFound: 'その記録は見つからなかった。',
+      backLink: '← 一覧に戻る',
+      status: '状態:',
+      statusDefault: '記録済',
+      untitled: '(無題)',
+      fallbackNote: null // never shown in Japanese, it's the source language
+    },
+    en: {
+      title: 'Diary',
+      subtitle: 'Personal log',
+      closing: '— end of record —',
+      empty: 'No entries yet.',
+      notFound: 'That entry could not be found.',
+      backLink: '← Back to list',
+      status: 'Status:',
+      statusDefault: 'Logged',
+      untitled: '(untitled)',
+      fallbackNote: 'Not yet translated — showing the Japanese original.'
+    },
+    uk: {
+      title: 'Щоденник',
+      subtitle: 'Особистий журнал',
+      closing: '— кінець запису —',
+      empty: 'Записів поки немає.',
+      notFound: 'Цей запис не знайдено.',
+      backLink: '← Назад до списку',
+      status: 'Статус:',
+      statusDefault: 'Записано',
+      untitled: '(без назви)',
+      fallbackNote: 'Ще не перекладено — показано оригінал японською.'
+    }
+  };
+
+  // ---------- language state (no cookies, no external service) ----------
 
   function currentLang() {
-    const raw = getCookie('googtrans');
-    if (!raw) return 'ja';
-    const parts = raw.split('/').filter(Boolean);
-    return parts[1] || 'ja';
+    return localStorage.getItem('diaryLang') || 'ja';
   }
 
-  function doGTranslate(lang) {
-    if (lang === 'ja') {
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + location.hostname;
-    } else {
-      document.cookie = 'googtrans=/ja/' + lang + '; path=/';
-    }
-    location.reload();
+  function setLang(lang) {
+    localStorage.setItem('diaryLang', lang);
+    route();
   }
 
   // ---------- helpers ----------
@@ -46,12 +74,15 @@
     return String(n).padStart(3, '0');
   }
 
+  // Resolve what to actually show for an entry in the current language:
+  // a hand-made translation if one exists, otherwise the Japanese
+  // original plus a note explaining why.
   function displayed(entry, lang) {
-    const manual = entry.translations && entry.translations[lang];
+    const manual = lang !== 'ja' && entry.translations && entry.translations[lang];
     return {
       title: manual ? manual.title : entry.title,
       body: manual ? manual.body : entry.body,
-      isManual: Boolean(manual)
+      isFallback: lang !== 'ja' && !manual
     };
   }
 
@@ -61,17 +92,21 @@
     return flat.length > maxChars ? flat.slice(0, maxChars) + '…' : flat;
   }
 
-  // entryNo counts up from the oldest entry (position from the end of
-  // the array), so numbers stay stable as new entries are prepended.
   function entryNoFor(idx, total) {
     return total - idx;
   }
 
+  function fallbackNoteHTML(strings, isFallback) {
+    return isFallback && strings.fallbackNote
+      ? `<p class="translation-note">${escapeHTML(strings.fallbackNote)}</p>`
+      : '';
+  }
+
   // ---------- list (top) view ----------
 
-  function renderList(list, lang) {
+  function renderList(list, lang, strings) {
     if (!list || list.length === 0) {
-      root.innerHTML = '<p class="empty">まだ記録がありません。</p>';
+      root.innerHTML = `<p class="empty">${escapeHTML(strings.empty)}</p>`;
       return;
     }
 
@@ -80,20 +115,21 @@
     root.innerHTML = list
       .map((entry, idx) => {
         const no = entryNoFor(idx, total);
-        const { title, body, isManual } = displayed(entry, lang);
-        const status = entry.status ? escapeHTML(entry.status) : '記録済';
+        const { title, body, isFallback } = displayed(entry, lang);
+        const status = entry.status ? escapeHTML(entry.status) : escapeHTML(strings.statusDefault);
         const delay = Math.min(idx * 0.06, 0.3);
 
         return `
-          <article class="entry entry--list${isManual ? ' notranslate' : ''}" style="animation-delay:${delay}s">
+          <article class="entry entry--list" style="animation-delay:${delay}s">
             <div class="log-line">
               <span class="log-no">ENTRY&nbsp;//&nbsp;${pad(no)}</span>
               <span class="sep">·</span>
               <span>${escapeHTML(entry.date || '')}</span>
               <span class="sep">·</span>
-              <span>状態: ${status}</span>
+              <span>${escapeHTML(strings.status)} ${status}</span>
             </div>
-            <a class="entry-title-link" href="#/entry/${no}">${escapeHTML(title || '(無題)')}</a>
+            <a class="entry-title-link" href="#/entry/${no}">${escapeHTML(title || strings.untitled)}</a>
+            ${fallbackNoteHTML(strings, isFallback)}
             <p class="entry-excerpt">${escapeHTML(excerpt(body || '', 70))}</p>
           </article>
         `;
@@ -103,33 +139,34 @@
 
   // ---------- single-entry (detail) view ----------
 
-  function renderEntry(list, no, lang) {
+  function renderEntry(list, no, lang, strings) {
     const total = list.length;
     const idx = list.findIndex((_, i) => entryNoFor(i, total) === no);
 
     if (idx === -1) {
       root.innerHTML = `
-        <p class="empty">その記録は見つからなかった。</p>
-        <a class="back-link" href="#/">← 一覧に戻る</a>
+        <p class="empty">${escapeHTML(strings.notFound)}</p>
+        <a class="back-link" href="#/">${escapeHTML(strings.backLink)}</a>
       `;
       return;
     }
 
     const entry = list[idx];
-    const { title, body, isManual } = displayed(entry, lang);
-    const status = entry.status ? escapeHTML(entry.status) : '記録済';
+    const { title, body, isFallback } = displayed(entry, lang);
+    const status = entry.status ? escapeHTML(entry.status) : escapeHTML(strings.statusDefault);
 
     root.innerHTML = `
-      <a class="back-link" href="#/">← 一覧に戻る</a>
-      <article class="entry${isManual ? ' notranslate' : ''}">
+      <a class="back-link" href="#/">${escapeHTML(strings.backLink)}</a>
+      <article class="entry">
         <div class="log-line">
           <span class="log-no">ENTRY&nbsp;//&nbsp;${pad(no)}</span>
           <span class="sep">·</span>
           <span>${escapeHTML(entry.date || '')}</span>
           <span class="sep">·</span>
-          <span>状態: ${status}</span>
+          <span>${escapeHTML(strings.status)} ${status}</span>
         </div>
-        <h2 class="entry-title">${escapeHTML(title || '(無題)')}</h2>
+        <h2 class="entry-title">${escapeHTML(title || strings.untitled)}</h2>
+        ${fallbackNoteHTML(strings, isFallback)}
         <div class="entry-body">${paragraphs(body || '')}</div>
       </article>
     `;
@@ -144,22 +181,16 @@
     return { view: 'list' };
   }
 
-  function route() {
-    const lang = currentLang();
-    const list = typeof ENTRIES !== 'undefined' ? ENTRIES : [];
-    const state = parseHash();
-
-    if (state.view === 'entry') {
-      renderEntry(list, state.no, lang);
-    } else {
-      renderList(list, lang);
-    }
-
-    window.scrollTo(0, 0);
-    syncLangButtons(lang);
+  function applyChrome(lang, strings) {
+    document.documentElement.lang = lang;
+    const titleEl = document.getElementById('siteTitle');
+    const subtitleEl = document.getElementById('subtitle');
+    const closingEl = document.getElementById('closing');
+    if (titleEl) titleEl.textContent = strings.title;
+    if (subtitleEl) subtitleEl.textContent = strings.subtitle;
+    if (closingEl) closingEl.textContent = strings.closing;
+    document.title = strings.title;
   }
-
-  // ---------- language switch buttons ----------
 
   function syncLangButtons(lang) {
     document.querySelectorAll('.lang-btn').forEach((btn) => {
@@ -167,9 +198,27 @@
     });
   }
 
+  function route() {
+    const lang = currentLang();
+    const strings = UI[lang] || UI.ja;
+    const list = typeof ENTRIES !== 'undefined' ? ENTRIES : [];
+    const state = parseHash();
+
+    applyChrome(lang, strings);
+
+    if (state.view === 'entry') {
+      renderEntry(list, state.no, lang, strings);
+    } else {
+      renderList(list, lang, strings);
+    }
+
+    window.scrollTo(0, 0);
+    syncLangButtons(lang);
+  }
+
   function wireLangButtons() {
     document.querySelectorAll('.lang-btn').forEach((btn) => {
-      btn.addEventListener('click', () => doGTranslate(btn.dataset.lang));
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
   }
 
