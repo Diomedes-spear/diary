@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日記</title>
+<meta name="description" content="個人の記録">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="book">
+
+    <div class="cover-band">
+      <div class="band-inner">
+        <div class="emblem" aria-hidden="true">記</div>
+        <div class="band-text">
+          <h1 class="title">日記</h1>
+          <p class="subtitle">PERSONAL&nbsp;LOG&nbsp;//&nbsp;個人記録</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <main id="entries" class="entries" aria-live="polite"></main>
+    </div>
+
+    <p class="closing">— 記録終わり —</p>
+
+  </div>
+
+  <script src="entries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
