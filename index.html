@@ -8,19 +8,318 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+:root {
+  --moss:        #3f4f3c;
+  --moss-dk:     #2a352a;
+  --clay:        #8a4a30;
+  --ink:         #1c1f1a;
+  --ink-soft:    #40453d;
+  --paper:       #f4f2ea;
+  --paper-dim:   #d9d5c4;
+  --black:       #14140f;
+
+  --sans: 'Noto Sans JP', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+
+  --measure: 680px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(20,20,15,0.35) 0%,
+      rgba(20,20,15,0.15) 30%,
+      rgba(20,20,15,0.55) 100%
+    ),
+    url('IMG_0068.jpeg');
+  background-size: cover, cover;
+  background-position: center, center 65%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--black);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* ---------- header ---------- */
+
+.head-band {
+  background: var(--black);
+  padding: 22px 24px;
+}
+
+.head-inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.emblem {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--paper-dim);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.head-text { flex: 1 1 auto; min-width: 0; }
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--paper);
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-weight: 300;
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  color: var(--paper-dim);
+}
+
+.lang-switch {
+  flex: none;
+  display: flex;
+  gap: 6px;
+}
+
+.lang-btn {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--paper-dim);
+  background: transparent;
+  border: 1px solid rgba(244,242,234,0.3);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  border-color: var(--paper);
+  color: var(--paper);
+}
+
+.lang-btn.is-active {
+  background: var(--paper);
+  color: var(--black);
+  border-color: var(--paper);
+}
+
+/* ---------- translation fallback note ---------- */
+
+.translation-note {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+
+/* ---------- entries ---------- */
+
+.entries {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 48px 20px 40px;
+}
+
+.entry {
+  background: rgba(244,242,234,0.86);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+  padding: 30px 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 18px 40px -22px rgba(0,0,0,0.55);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: rise 0.6s ease forwards;
+}
+
+@keyframes rise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry { animation: none; opacity: 1; transform: none; }
+}
+
+.log-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.log-no { color: var(--clay); font-weight: 500; }
+.log-line .sep { opacity: 0.5; }
+
+.entry-title {
+  margin: 0 0 18px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+/* ---------- list view ---------- */
+
+.entry--list {
+  cursor: default;
+}
+
+.entry-title-link {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.entry-title-link:hover,
+.entry-title-link:focus-visible {
+  color: var(--clay);
+  border-bottom-color: var(--clay);
+}
+
+.entry-excerpt {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+
+/* ---------- back link (detail view) ---------- */
+
+.back-link {
+  display: inline-block;
+  margin: 0 0 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--paper);
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(244,242,234,0.5);
+  padding-bottom: 1px;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  border-bottom-color: var(--paper);
+}
+
+.entry-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.entry-body p { margin: 0 0 1.4em; }
+.entry-body p:last-child { margin-bottom: 0; }
+
+/* ---------- empty ---------- */
+
+.empty {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+  padding: 20px 0 40px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* ---------- footer ---------- */
+
+.site-foot {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--paper);
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.build-tag {
+  text-align: center;
+  padding: 0 0 60px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(244,242,234,0.5);
+}
+
+/* ---------- focus ---------- */
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 560px) {
+  .head-band { padding: 16px 16px; }
+  .title { font-size: 17px; }
+  .subtitle { font-size: 10.5px; }
+  .lang-btn { padding: 4px 9px; font-size: 10px; }
+  .entries { padding: 32px 14px 24px; }
+  .entry { padding: 22px 20px; }
+  .entry-title { font-size: 17px; }
+  .entry-body { font-size: 15px; }
+}
+
+@media (max-width: 380px) {
+  .subtitle { display: none; }
+}
+</style>
 </head>
 <body>
 
-  <div class="bg-photo" aria-hidden="true"></div>
-  <div class="bg-scrim" aria-hidden="true"></div>
-
   <header class="head-band">
     <div class="head-inner">
-      <div class="emblem" aria-hidden="true">直</div>
+      <div class="emblem" aria-hidden="true">🐋</div>
       <div class="head-text">
-        <h1 class="title">日記</h1>
-        <p class="subtitle" id="subtitle">Naomichi‘s Diary</p>
+        <h1 class="title" id="siteTitle">日記</h1>
+        <p class="subtitle" id="subtitle">Naomichi's Diary</p>
       </div>
       <nav class="lang-switch" aria-label="言語切り替え">
         <button type="button" data-lang="ja" class="lang-btn is-active">日本語</button>
@@ -35,6 +334,7 @@
   <footer class="site-foot">
     <p id="closing">— 記録終わり —</p>
   </footer>
+  <p class="build-tag">build 2026-09-21-e</p>
 
   <script src="entries.js"></script>
   <script src="script.js"></script>

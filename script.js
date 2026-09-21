@@ -6,7 +6,7 @@
   const UI = {
     ja: {
       title: '日記',
-      subtitle: '個人の記録',
+      subtitle: "Naomichi's Diary",
       closing: '— 記録終わり —',
       empty: 'まだ記録がありません。',
       notFound: 'その記録は見つからなかった。',
@@ -18,7 +18,7 @@
     },
     en: {
       title: 'Diary',
-      subtitle: 'Personal log',
+      subtitle: "Naomichi's Diary",
       closing: '— end of record —',
       empty: 'No entries yet.',
       notFound: 'That entry could not be found.',
@@ -30,7 +30,7 @@
     },
     uk: {
       title: 'Щоденник',
-      subtitle: 'Особистий журнал',
+      subtitle: "Naomichi's Diary",
       closing: '— кінець запису —',
       empty: 'Записів поки немає.',
       notFound: 'Цей запис не знайдено.',
