@@ -7,32 +7,48 @@
 <meta name="description" content="個人の記録">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Translate (invisible engine — driven by the custom buttons below) -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'ja', includedLanguages: 'en,uk', autoDisplay: false },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
-  <div class="vignette" aria-hidden="true"></div>
+  <div class="bg-photo" aria-hidden="true"></div>
+  <div class="bg-scrim" aria-hidden="true"></div>
 
-  <div class="book">
-
-    <div class="cover-band">
-      <div class="band-inner">
-        <div class="emblem" aria-hidden="true">記</div>
-        <div class="band-text">
-          <h1 class="title">日記</h1>
-          <p class="subtitle">PERSONAL&nbsp;LOG&nbsp;//&nbsp;個人記録</p>
-        </div>
+  <header class="head-band">
+    <div class="head-inner">
+      <div class="emblem" aria-hidden="true">記</div>
+      <div class="head-text">
+        <h1 class="title">日記</h1>
+        <p class="subtitle">個人の記録</p>
       </div>
+      <nav class="lang-switch" aria-label="言語切り替え">
+        <button type="button" data-lang="ja" class="lang-btn is-active">日本語</button>
+        <button type="button" data-lang="en" class="lang-btn">EN</button>
+        <button type="button" data-lang="uk" class="lang-btn">UA</button>
+      </nav>
     </div>
+  </header>
 
-    <div class="page">
-      <main id="entries" class="entries" aria-live="polite"></main>
-    </div>
+  <!-- required mount point for the Google Translate engine; kept invisible -->
+  <div id="google_translate_element" class="gt-hidden"></div>
 
-    <p class="closing">— 記録終わり —</p>
+  <main id="entries" class="entries" aria-live="polite"></main>
 
-  </div>
+  <footer class="site-foot">
+    <p>— 記録終わり —</p>
+  </footer>
 
   <script src="entries.js"></script>
   <script src="script.js"></script>
