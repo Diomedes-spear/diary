@@ -131,26 +131,15 @@ body {
   border-color: var(--paper);
 }
 
-/* the real Google Translate widget stays mounted but invisible;
-   our pill buttons are the only visible control */
-.gt-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+/* ---------- translation fallback note ---------- */
 
-/* Google injects a top banner iframe + shifts body down when active —
-   suppress both so only our own header is visible */
-.goog-te-banner-frame.skiptranslate,
-body > .skiptranslate {
-  display: none !important;
+.translation-note {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
 }
-body { top: 0 !important; }
-.goog-tooltip, .goog-tooltip:hover { display: none !important; }
-.goog-text-highlight { background: none !important; box-shadow: none !important; }
 
 /* ---------- entries ---------- */
 
