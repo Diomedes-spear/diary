@@ -33,6 +33,123 @@
 
 const ENTRIES = [
   {
+    date: "2026.09.22",
+    title: "死に様について",
+    body: `
+僕の祖父、忠久さんの、ゆっくりお時間をかけた穏やかな死に方は、自分も周りの人も、それを受け入れられるための準備がよくできるようなものだったと思う。
+
+僕が最後に会いに行く3日前には、寝ながら家族の名前を1人ずつ呼んで、ありがとうと繰り返し言っていたらしい。2日前から声が出なくなり、マジックで紙に、妻、僕の祖母の道子さんへ感謝の言葉を書き続けたらしい。
+
+僕が会いに行った時には、もう目が白く濁りはじめて、おそらく見えていないだろうと道子さんに言われた。
+僕が部屋に行くと、忠久さんはちゃんと黒い目をして、痩せて窪んだ顔で僕のことを見た。道子さんはそれを見て驚いていた。僕の母、恵子さんはそのときの表情が忘れられないと言う。
+僕はしばらく立ち尽くしてしまったが、彼の手は握っていられた。道子さんや恵子さんはその間色々と喋っていたけど、僕が伝えたかった事は一つだけで、今の自分の想像力は小さい時に一緒に過ごした時間がちゃんと活きているからで、そのことで感謝しているという事をしっかり伝えると、忠久さんは最期の力を振り絞るようにして僕の手を握りしめてきた。骨しか無いような手なのに、大人の女性に負けないほど強い力だった。声は出せないけど、こちらを見る顔と握る手の力で、言葉でなくて良い、思いとも言えない何かが確実に伝わってきた。水の残っていない乾いた目に涙が浮かんでいるのも僕にはちゃんと見えた。彼について思い出すとき、銀の日産スカイラインの前で幼い僕を待っている背の高いスラっとした立ち姿や、居間で僕が既に知っている事について長々と教えてくるときの話し方が、最初に頭に浮かぶ印象だったが、この時の手の感覚がそれらを塗り替えたことに、葬式の最中に写真を眺めていて気づいた。
+僕とのやり取りで思う事があったのか、もう会えないということを考えていたのか、あるいは単に疲れてしまったのか、そんな表情でぎゅっと目を瞑ってそのまま眠ってしまったので、僕は「またね」と言って帰った。
+僕が帰ったあと、朝になる前に彼は亡くなった。
+
+お通夜と葬式では、僕は何人かの人と話したり隣に座ったりしたが、その殆どがいい加減な人か、愚かな人に見えた。そんな中唯一、ユーモアと、さりげなくも確かな知性、お手本の様な気品を併せ持った素敵な女性がいた。和子さんというその親戚のおばさんは僕に、忠久さんの事を「よく、辛辣なことを冗談なのか本気なのか、どちらともとれるように言うことがあった。家にいながら、自分がいない場所の事もよくわかってしまうような人だった。親戚の中で厄介な人がいても忠久さんだけはちゃんと注意して、面倒を見てあげられる人だった。」と教えてくれた。僕にとっては孫と女の子に甘いだけの人に見えていたのに。
+
+葬式を終えてから、家で道子さんたちは、「これが突然事故や何かで死んでしまったのだったら、きっとものすごく大変ね」と言っていた。
+
+自分の行動で近い人に迷惑をかけないように努力すること。人にしてもらった事を忘れずにきちんと感謝すること。自分がした事は心ある誰かが見てくれていること。
+僕の祖父は、死に様で見せてくれた。
+`,
+    translations: {
+      en: {
+        title: "On the Way He Died",
+        body: `
+I think the way my grandfather, Tadahisa, died — slowly, taking his time, at peace — was the kind of death that gave both himself and the people around him room to properly prepare to accept it.
+
+Three days before I went to see him for the last time, they say that as he lay there, he called out each family member's name one by one, repeating "thank you" over and over. From two days before, he could no longer speak, and apparently kept writing words of gratitude to his wife — my grandmother, Michiko — on paper with a marker.
+
+By the time I went to see him, his eyes had already begun to cloud over white, and Michiko told me he probably couldn't see anymore.
+When I went into the room, Tadahisa's eyes were still properly dark, and with his thin, hollowed face, he looked right at me. Michiko was startled to see it. My mother, Keiko, says she can never forget the expression on his face in that moment.
+I stood there frozen for a while, but I was able to hold his hand. Michiko and Keiko kept talking about various things the whole time, but the one thing I wanted to convey was just this: that my imagination now is alive precisely because of the time we spent together when I was small, and that I was grateful for that. When I made sure to tell him this clearly, Tadahisa, as if summoning his very last strength, gripped my hand tightly. His hand was nothing but bone, and yet the strength in it rivaled that of a grown woman. He couldn't speak, but through the face looking at me and the strength of that grip, something came through clearly — not words, not even quite feelings, but something undeniable all the same. I could see it plainly, too: tears welling up in eyes that had no water left in them, eyes gone dry. Whenever I think of him, what comes to mind first is the image of him standing tall and slender in front of his silver Nissan Skyline, waiting for me when I was small, or the way he used to talk on and on in the living room, explaining things I already knew. But it was while looking at photographs during the funeral that I realized the feeling of his hand in that moment had overwritten all of that.
+Whether it was something he felt from our exchange, or he was thinking that he'd never see me again, or he had simply grown tired — with that kind of expression, he shut his eyes tightly and fell asleep just like that, so I said, "See you again," and went home.
+After I left, before morning came, he passed away.
+
+At the wake and the funeral, I talked with several people, sat next to some, but most of them struck me as careless or foolish people. In the midst of that, there was exactly one wonderful woman who combined humor, a quiet but unmistakable intelligence, and a dignity that felt like a model to follow. That relative, an aunt named Kazuko, told me about Tadahisa: "He'd often say something cutting in a way you couldn't tell was a joke or serious. Even while sitting at home, he seemed to understand what was going on in places he wasn't. Among the relatives, even when there was someone difficult, Tadahisa was the one who properly kept an eye on them and looked after them." To me, he'd only ever looked like a man who doted on his grandson and on girls.
+
+After the funeral was over, back at the house, Michiko and the others were saying, "If he had died suddenly, in an accident or something, it would have been so much harder."
+
+To make an effort so that your own actions don't burden the people close to you. To remember what others have done for you and properly give thanks for it. To know that someone with a good heart is watching what you do.
+My grandfather showed me all of this through the way he died.
+`
+      },
+      uk: {
+        title: "Про те, як він пішов",
+        body: `
+Думаю, те, як помирав мій дідусь Тадахіса — повільно, не поспішаючи, спокійно, — було саме такою смертю, яка дала і йому самому, і людям навколо достатньо часу, щоб гідно підготуватися й прийняти це.
+
+За три дні до того, як я поїхав побачити його востаннє, він, лежачи в ліжку, начебто кликав по імені кожного члена родини й раз у раз повторював «дякую». Із позаминулого дня голос у нього зник зовсім, і, кажуть, він продовжував писати маркером на папері слова вдячності дружині — моїй бабусі Мічіко.
+
+Коли я приїхав його провідати, очі в нього вже почали каламутніти й біліти, і Мічіко сказала мені, що він, напевно, уже нічого не бачить.
+Коли я зайшов до кімнати, у Тадахіси очі, як і раніше, були по-справжньому темними, і своїм схудлим, запалим обличчям він подивився на мене. Мічіко, побачивши це, була вражена. Моя мати, Кейко, каже, що не може забути вираз його обличчя в ту мить.
+Я якийсь час стояв, не в змозі поворухнутися, але руку його тримати міг. Мічіко й Кейко весь цей час про щось говорили, та єдине, що я хотів донести, — це те, що моя нинішня уява живе саме завдяки часу, проведеному з ним у дитинстві, і що я за це вдячний. Коли я чітко це промовив, Тадахіса, ніби зібравши останні сили, міцно стиснув мою руку. Рука була наче з самих кісток, а сила в ній була не слабша, ніж у дорослої жінки. Говорити він не міг, але через погляд, спрямований на мене, і через силу цього стискання до мене дійшло щось цілком певне — не слова, навіть не зовсім почуття, але щось безсумнівне. Я також ясно бачив, як у сухих очах, у яких уже не лишилося вологи, виступили сльози. Коли я згадую про нього, першими зринають образи: як він, високий і стрункий, чекає на мене, маленького, біля свого срібного «Ніссан Скайлайн», або те, як у вітальні він довго-предовго розповідав мені те, що я вже й так знав. Але саме тоді, під час похорону, розглядаючи фотографії, я зрозумів, що відчуття від його руки в ту мить витіснило собою всі ці спогади.
+Чи то через щось, що він відчув від нашого спілкування, чи то думаючи про те, що ми більше не побачимось, чи, може, просто втомившись, — з таким виразом обличчя він міцно заплющив очі й так і заснув, тож я сказав «до зустрічі» і поїхав додому.
+Після того як я поїхав, ще до ранку він помер.
+
+На поминках і похороні я з кимось розмовляв, поряд із кимось сидів, але майже всі здавалися мені або несерйозними, або нерозумними людьми. І серед них була лише одна чудова жінка, що поєднувала в собі почуття гумору, непоказний, але безсумнівний розум і гідність, гідну наслідування. Та родичка, тітка на ім'я Кадзуко, розповіла мені про Тадахісу: «Він часто говорив щось доволі різке так, що не можна було зрозуміти — жарт це чи серйозно. Навіть сидячи вдома, він якось добре розумів, що відбувається там, де його немає. Навіть коли серед родичів траплялася складна людина, лише Тадахіса міг як слід за нею наглянути і подбати про неї». А мені він завжди здавався людиною, яка просто балувала онука й дівчаток.
+
+Після похорону, вдома, Мічіко та інші казали: «Якби він раптово загинув, наприклад, в аварії чи ще якось, було б, напевно, страшенно важко».
+
+Намагатися своїми вчинками не завдавати клопоту близьким людям. Пам'ятати те, що для тебе зробили інші, і як слід за це дякувати. Знати, що те, що ти робиш, бачить хтось із чуйним серцем.
+Мій дідусь показав мені все це через те, як він помер.
+`
+      }
+    }
+  },
+  {
+    date: "2026.09.22",
+    title: "藤さんという監督",
+    body: `
+以前、映像を作る仕事で俳優のオーディションを手伝ったことがある。
+
+オーディションの一次選考というのは、選ぶ側の机に座っていさえすれば、私のような素人目に見ても芝居ができているできていないがわかるものだと思った。
+
+その中で、態度も芝居も案件理解も、これは無いな、という人がいた。藤さんという監督は、その人のいたグループをバラした後で、思い出したようにその娘を呼び止める様に言ったが、彼女は既に帰ってしまっていた。
+
+「あの子は声がハスキーで特徴的だから、声の仕事を頑張る様に言いたかった」と言っていたのを見て、藤さんにはあの娘が態度も芝居も一流になる未来を想像できていて、そこから逆算して、道を照らすことができるんだと思った。
+
+オーディションのあとで、監督に意図を質問したら、「せっかく今日来てくれて出会ったのだから、何か掴んで帰って欲しくて。」と帰ってきた。
+
+藤さんはまだ40歳にも満たないぐらいの青年だが、人に与えるということについてその姿勢の気高さは右に出る者がいないのではなかろうかと思い、見習う事にした。
+`,
+    translations: {
+      en: {
+        title: "A Director Named Fuji",
+        body: `
+Some time ago, through video production work, I helped out with an actor audition.
+
+I came to think that in the first round of an audition, all you have to do is sit at the selectors' table, and even an amateur eye like mine can tell whether someone's acting is working or not.
+
+Among the candidates, there was one whose attitude, acting, and grasp of the project were all clearly lacking. A director named Fuji, after the group she'd been part of had already broken up and left, suddenly seemed to remember her and told someone to call her back — but she had already gone home.
+
+Watching him say, "her voice is distinctive, husky — I wanted to tell her to work hard at voice acting," I felt that Fuji could actually picture a future in which that girl's attitude and acting had become first-rate, and that from that imagined future, working backward, he was able to light her path.
+
+After the audition, I asked him what he'd meant by it, and he answered, "Since she came all this way today and we got to meet her, I wanted her to take something home with her."
+
+Fuji is still a young man, not even forty, but I don't think anyone could surpass the nobility of his posture when it comes to giving to others — and I decided to try to learn from him.
+`
+      },
+      uk: {
+        title: "Режисер на ім'я Фудзі",
+        body: `
+Колись, у рамках роботи над відео, я допомагав проводити прослуховування для акторів.
+
+Я подумав, що на першому етапі прослуховування достатньо просто сидіти за столом тих, хто обирає, — і навіть непрофесійному оку, як моє, стає зрозуміло, вдається гра чи ні.
+
+Серед претендентів була одна дівчина, у якої явно не було ні потрібного ставлення, ні гри, ні розуміння завдання. Режисер на ім'я Фудзі, вже після того як група, до якої вона належала, розійшлася й пішла, ніби раптом щось пригадав і попросив покликати її назад — але вона вже пішла додому.
+
+Дивлячись, як він сказав: «У неї особливий, хрипкуватий голос, тому я хотів порадити їй серйозно зайнятися озвучуванням», — я зрозумів, що Фудзі здатен уявити майбутнє, в якому і ставлення, і гра цієї дівчини стануть першокласними, і, відштовхуючись саме від цього уявного майбутнього, він може освітлювати їй шлях.
+
+Після прослуховування я запитав режисера, що він мав на увазі, і він відповів: «Раз вже вона сьогодні прийшла і ми зустрілися, мені хотілося, щоб вона забрала додому хоч щось».
+
+Фудзі — ще зовсім молода людина, йому навіть немає сорока, але, здається, за шляхетністю ставлення до того, як віддавати щось іншим, йому немає рівних — тож я вирішив брати з нього приклад.
+`
+      }
+    }
+  },
+  {
     date: "2026.09.21",
     title: "菅先生とエントロピー",
     body: `
