@@ -32,6 +32,8 @@ html {
   background-color: var(--black);
 }
 
+/* ---------- fixed background photo (viewport-anchored, not page-height-anchored) ---------- */
+
 .bg-fixed {
   position: fixed;
   inset: 0;
@@ -63,6 +65,8 @@ body {
 /* ---------- header ---------- */
 
 .head-band {
+  position: relative;
+  z-index: 1;
   background: var(--black);
   padding: 22px 24px;
 }
@@ -152,6 +156,8 @@ body {
 /* ---------- entries ---------- */
 
 .entries {
+  position: relative;
+  z-index: 1;
   max-width: var(--measure);
   margin: 0 auto;
   padding: 48px 20px 40px;
@@ -210,7 +216,7 @@ body {
 
 .entry-title-link {
   display: block;
-  margin: 0 0 10px;
+  margin: 0;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -224,12 +230,6 @@ body {
 .entry-title-link:focus-visible {
   color: var(--clay);
   border-bottom-color: var(--clay);
-}
-
-.entry-excerpt {
-  margin: 0;
-  font-size: 14.5px;
-  color: var(--ink-soft);
 }
 
 /* ---------- back link (detail view) ---------- */
@@ -274,16 +274,17 @@ body {
 /* ---------- footer ---------- */
 
 .site-foot {
+  position: relative;
+  z-index: 1;
   max-width: var(--measure);
   margin: 0 auto;
-  padding: 0 24px 40px;
+  padding: 0 24px 60px;
   font-size: 12px;
   letter-spacing: 0.14em;
   color: var(--paper);
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
-
 
 /* ---------- focus ---------- */
 
@@ -332,10 +333,10 @@ a:focus-visible, button:focus-visible {
   <main id="entries" class="entries" aria-live="polite"></main>
 
   <footer class="site-foot">
-    <p id="closing">— Thank you for visiting —</p>
+    <p id="closing">— ご覧いただきありがとうございました —</p>
   </footer>
 
-  <script src="entries.js?v=4"></script>
-  <script src="script.js?v=4"></script>
+  <script src="entries.js?v=5"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

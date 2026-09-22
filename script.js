@@ -86,12 +86,6 @@
     };
   }
 
-  function excerpt(body, maxChars) {
-    const firstPara = body.trim().split(/\n\s*\n/)[0] || '';
-    const flat = firstPara.replace(/\s+/g, '');
-    return flat.length > maxChars ? flat.slice(0, maxChars) + '…' : flat;
-  }
-
   function entryNoFor(idx, total) {
     return total - idx;
   }
@@ -130,7 +124,6 @@
             </div>
             <a class="entry-title-link" href="#/entry/${no}">${escapeHTML(title || strings.untitled)}</a>
             ${fallbackNoteHTML(strings, isFallback)}
-            <p class="entry-excerpt">${escapeHTML(excerpt(body || '', 70))}</p>
           </article>
         `;
       })
