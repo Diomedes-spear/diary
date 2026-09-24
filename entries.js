@@ -34,6 +34,105 @@
 const ENTRIES = [
   {
     date: "2026.09.22",
+    title: "河岸の太陽",
+    body: `
+新幹線まで時間があるから、場所ぐらいは知っておこう。関西支社に寄ったのはそれだけの理由だった。その時に顔が浮かんだが、彼だった。関西支社に行くなら、彼に会えるか聞いておこうぐらいの事だった。
+
+俺より8つ歳上の直樹さんは、和歌山に住んでいる。初対面のときからとてもフレンドリーで、人との間に壁が無い、陽気な人に見えた。直樹さんは僕の山口県出身の友人、太陽ととても似ている。2人とも生来の明るさと軽さを併せ持っている。初対面の人と15分で友達になれる。馬鹿だな、と思う時もあれば、よく考えていると感嘆させられる時もある。競争させられることが嫌い。何よりも仲間や友達が大事。それ以上に妻が大事。
+
+僕は19歳の頃、太陽と毎日予備校から歩いて帰り、たまに河岸で飲んではいけないビールを飲んで、人生や将来、女について語り合った。山口弁を突き通すがの強さと、ほんわかした性格、それでいてまともに話ができる太陽が、俺は好きだった。横浜の鶴見川の河岸は、俺たち本当の友達になっていった思い出の場所だった。直樹さんが何の気もなく見せる笑顔は、太陽が河岸でみせた、なんだかもう一度見たくなるそれによく似ていた。
+
+直樹さんとは何度か仕事の事で会話した。そのキャラクターに反してとても野心的なビジョンを持っていた。実現性とビジョンとをいったりきたりして、実のある会話を気持ちよくできる、類稀な相手だ。
+
+しかし最も印象に残っているのは、出張先のホテルの部屋で缶ビールを一緒に飲んだ夜、「僕は妻が本当に好き。いざという時、頼りになる。心が強いから、僕が弱った時にいてくれるのが嬉しい」と話してくれたことだ。
+
+多分、関西支社に寄ろうと思った時に顔が浮かんだのは、そんな直樹さんの人としての魅力ゆえなんだろう。
+
+大阪での仕事を終えて関西支社に着くと、直樹さんは待ってたよと言わんばかりに僕のほうへニコッと笑いかけた。「荷物ここに置き。それで、ちょっと下いこ。コーヒーでも飲も。」
+
+俺たちは外に出て、彼のお気に入りの散歩コースを行った。話は自然と、いま謹慎中の僕らの同僚についての話になった。その話をするのに、俺たちは堂島川の河岸に座った。直樹さんは、謹慎中の同僚とは数年来の戦友で、心から信頼する友人だと話してくれた。俺も一年たたないぐらいの付き合いだが、歳が同じで高校も同じという奇遇さから、その能力の高さに尊敬を覚えつつも、危うさのようなものも同時に感じていた。きっと、直樹さんも同じだったんだろう。僕らはそれを言うとでもなく、互いの想いを感じ合った。僕も直樹さんも、謹慎の理由について詮索したり噂したりする人々にうんざりしているのだ。とはいえ、直樹さんは、信頼する戦友の謹慎とその理由とされている事、真偽はともあれ、それがショックだったらしい。躊躇いながらも、打ち明けてくれた。僕は思わず聞いてしまった。「奥さんには、それって聞いてもらうんですか？」と。奥さんは、ただそれを聞いてくれるらしい。直樹さんは、それを頼りになると言った。
+
+俺は思わず、今思っていることを打ち明けた。東京での競争や知略、自分の力を証明しビジネスの世界にインパクトを作るという仕事、この極限のストレスの果てに15年後に何が残るのか。本当に大切な人と出会い、共に過ごす事の尊さを思えば、今必死に創り出している売上や、血眼になって数字をスライドやホワイトボードに書くことへの違和感がますます強くなる。直樹さんのように、「弱った時にいて欲しい人」と暮らせる場所で生きる、という事に近頃強く憧れている、そうあるべきなんじゃないかと思うようになってきたと。
+
+直樹さんはただ聞いて、理解してくれた。
+
+堂島川の汚い、川底の見えない緑を、2人で眺めた。太陽の光が川から反射して、高速道路の陰をキラキラと照らしていた。
+
+そして最後に、直樹さんは彼が興そうとしているビジネスについて、秘匿していたその計画を、密かに打ち明けてくれた。そして、俺が持っている能力がそのビジネスに不可欠だと感じていると。そして、俺のキャラクターがその仲間に引き入れるに値する信頼と魅力があると。
+
+とても嬉しかった。
+
+時間が迫り、座っていた河岸を離れ渡辺橋を渡る間、直樹さんはとても嬉しそうな笑顔で、事業計画を話してくれた。その笑顔が、夏の太陽よりもずっと眩しかった。
+`,
+    translations: {
+      en: {
+        title: "The Sun by the River",
+        body: `
+I had time before my shinkansen, so I figured I'd at least go see what the place looked like. That was the only reason I stopped by the Kansai branch office. A face came to mind right then, and it was his. If I was going to the Kansai branch anyway, I thought I might as well ask whether I could see him.
+
+Naoki-san, eight years older than me, lives in Wakayama. From the moment we first met, he struck me as friendly, easygoing, someone who puts up no walls between himself and other people. Naoki-san closely resembles my friend Taiyo, who's from Yamaguchi Prefecture. Both of them share the same natural brightness and lightness. They can become friends with someone they've just met within fifteen minutes. Sometimes I think, what a fool, and other times I'm struck by how carefully they've actually thought something through. Neither of them likes being made to compete. Nothing matters more to them than their comrades and friends. And more than that, even, their wife matters most.
+
+When I was nineteen, Taiyo and I used to walk home together from cram school every day, and every once in a while we'd sit on the riverbank and drink beer we weren't supposed to be drinking, talking about life, the future, girls. I loved that Taiyo stubbornly stuck to his Yamaguchi dialect, had this warm, easygoing personality, and could still hold a real, serious conversation. The bank of the Tsurumi River in Yokohama was the place where the memory of us truly becoming friends took shape. The smile Naoki-san shows without a second thought closely resembles the one Taiyo used to show on that riverbank — the kind you somehow want to see again.
+
+Naoki-san and I have talked about work several times. Contrary to what his personality might suggest, he holds a very ambitious vision. He's a rare conversation partner — someone with whom you can move back and forth between feasibility and vision and still have a substantive, genuinely enjoyable conversation.
+
+But what stays with me most is a night on a business trip, drinking canned beer together in a hotel room, when he told me, "I really do love my wife. When it counts, she's someone I can rely on. Her heart is strong, and I'm grateful that she's there for me when I'm the one who's weak."
+
+I suppose the reason his face came to mind when I thought about stopping by the Kansai branch is exactly that quality of his, that charm he has simply as a person.
+
+When I finished my work in Osaka and arrived at the Kansai branch, Naoki-san smiled at me as if to say he'd been waiting. "Put your bags down here. Let's head downstairs for a bit — grab a coffee or something."
+
+We stepped outside and took his favorite walking route. The conversation naturally turned to a colleague of ours who's currently on suspension. To talk about it, we sat down on the bank of the Dojima River. Naoki-san told me that the suspended colleague was a comrade-in-arms of several years, a friend he trusts from the bottom of his heart. I've known him less than a year myself, but given the coincidence of us being the same age and having gone to the same high school, I'd come to admire how capable he was, while at the same time sensing something precarious in him. I'm sure Naoki-san felt the same way. Neither of us said so outright, but we could feel it in each other. Both Naoki-san and I are sick of the people who pry into or gossip about the reasons for the suspension. Even so, Naoki-san seemed genuinely shaken by what was said to be behind the suspension of a comrade he trusted — whether or not it was even true. Hesitantly, he opened up to me about it. I found myself asking, without quite meaning to, "Does your wife let you talk to her about that kind of thing?" His wife, apparently, simply listens. Naoki-san said that's what makes her someone he can rely on.
+
+Without quite meaning to, I found myself opening up about what's been on my mind lately. The competition and scheming in Tokyo, the work of proving your own worth and making some impact on the business world — at the far end of this kind of extreme stress, what's actually left after fifteen years? When I think about the preciousness of meeting someone who truly matters and spending your life alongside them, the sense of wrongness about the revenue I'm desperately generating right now, about staring bloodshot-eyed at numbers on slides and whiteboards, only grows stronger. Lately I've come to feel a strong longing to live, the way Naoki-san does, in a place where I can be with "someone I'd want beside me when I'm weak" — and I've started to think that's how it probably should be.
+
+Naoki-san just listened, and understood.
+
+The two of us looked out at the murky green water of the Dojima River, its bottom invisible. Sunlight reflected off the river, glittering against the shadow of the expressway above.
+
+And finally, Naoki-san quietly confided in me about the business he's trying to start — a plan he'd been keeping secret. He told me he felt that the abilities I have were indispensable to that business. And that my character carried enough trust and appeal to be worth bringing into that circle.
+
+It made me genuinely happy.
+
+As time closed in and we left the riverbank where we'd been sitting, crossing Watanabe Bridge, Naoki-san told me about his business plan with a genuinely happy smile on his face. That smile was far more dazzling than the summer sun.
+`
+      },
+      uk: {
+        title: "Сонце біля річки",
+        body: `
+До синкансена лишався час, тож я вирішив хоча б подивитися, що це за місце. Тільки заради цього я й заглянув у філію в Кансай. Саме тоді мені на думку спав один образ — його обличчя. Раз я все одно їхав до філії в Кансай, подумав, чи не запитати, чи зможу з ним побачитися.
+
+Наокі-сан, який на вісім років старший за мене, живе у Вакаямі. З першої ж зустрічі він здався мені дуже дружелюбним, життєрадісним, людиною без жодних бар'єрів у спілкуванні. Наокі-сан дуже схожий на мого друга Тайо з префектури Ямаґуті. Обидва вони мають природну легкість і життєрадісність. За п'ятнадцять хвилин здатні потоваришувати з людиною, яку щойно зустріли. Іноді думаю: ну й дурень, а іноді — навпаки, дивуюся, наскільки серйозно вони насправді все обдумують. Не люблять, коли їх змушують змагатися. Понад усе цінують товаришів і друзів. А ще більше — дружину.
+
+Коли мені було дев'ятнадцять, ми з Тайо щодня йшли пішки з підготовчих курсів додому і час від часу сідали на березі річки, пили пиво, яке нам іще не можна було пити, і говорили про життя, майбутнє, дівчат. Мені подобалося, що Тайо вперто тримався своєї ямаґуцької говірки, мав теплий, невимушений характер і водночас умів говорити по-справжньому серйозно. Берег річки Цурумі в Йокогамі став тим місцем, де народжувалася пам'ять про те, як ми ставали справжніми друзями. Усмішка, яку Наокі-сан показує без жодної задньої думки, дуже схожа на ту, яку показував Тайо на тому березі — усмішку, яку чомусь хочеться побачити ще раз.
+
+З Наокі-саном ми кілька разів говорили про роботу. Всупереч його характеру, у нього дуже амбітне бачення. Він рідкісний співрозмовник — з ним можна вільно рухатися між реалістичністю й баченням і при цьому мати змістовну, по-справжньому приємну розмову.
+
+Але найбільше запам'яталася мені ніч у номері готелю під час відрядження, коли ми пили пиво з бляшанок, і він сказав мені: «Я справді дуже люблю свою дружину. У вирішальний момент на неї можна покластися. У неї сильне серце, тож мені приємно, що вона поруч, коли слабким виявляюся я».
+
+Мабуть, саме через цю його людську привабливість мені й спало на думку його обличчя, коли я думав про те, щоб заглянути до філії в Кансай.
+
+Закінчивши роботу в Осаці й прийшовши до філії в Кансай, я побачив, як Наокі-сан усміхнувся мені, ніби кажучи, що чекав. «Постав тут речі. А тоді ходімо вниз ненадовго, вип'ємо кави абощо».
+
+Ми вийшли на вулицю й пройшли його улюбленим маршрутом для прогулянок. Розмова природно перейшла на нашого колегу, який зараз відсторонений від роботи. Щоб про це поговорити, ми сіли на березі річки Доджіма. Наокі-сан розповів мені, що з тим відстороненим колегою вони — бойові товариші вже кілька років, друг, якому він довіряє від щирого серця. Я знайомий з ним трохи менше року, але через дивний збіг — однаковий вік і та сама середня школа — я захоплювався його високими здібностями, і водночас відчував у ньому щось небезпечне. Напевно, Наокі-сан відчував те саме. Ми не сказали цього прямо, але відчули це одне в одному. І я, і Наокі-сан однаково втомилися від людей, які пхають носа чи пліткують про причини відсторонення. І все ж Наокі-сана, здається, по-справжньому шокувало те, що вважалося причиною відсторонення довіреного бойового товариша, — правда це чи ні. Вагаючись, він усе ж розповів мені. Я не втримався й запитав: «А дружині ви про таке розповідаєте?» Виявляється, дружина просто його вислуховує. Наокі-сан сказав, що саме тому на неї можна покластися.
+
+Я й сам, не зовсім усвідомлюючи це, розповів йому про те, що мене останнім часом турбує. Конкуренція й хитрощі в Токіо, робота, яка полягає в тому, щоб довести власну силу і справити вплив на світ бізнесу, — що ж, зрештою, залишиться через п'ятнадцять років на тлі цього граничного стресу? Коли думаю про те, наскільки цінно зустріти по-справжньому важливу людину й проводити з нею час, відчуття невідповідності через виторг, який я зараз відчайдушно створюю, через цифри, які я до нестями виводжу на слайдах і дошках, стає лише сильнішим. Останнім часом я все сильніше мрію жити так, як Наокі-сан, — у місці, де можна бути поруч із «людиною, яку хочеш мати поруч, коли ти слабкий», і почав думати, що, мабуть, так і має бути.
+
+Наокі-сан просто слухав і розумів.
+
+Ми удвох дивилися на брудну, непрозору зелень річки Доджіма, дно якої не було видно. Сонячне світло відбивалося від річки й виблискувало в тіні швидкісної автостради.
+
+А наостанок Наокі-сан потай розповів мені про бізнес, який намагається створити, — план, який досі тримав у таємниці. І сказав, що вважає мої здібності незамінними для цього бізнесу. І що мій характер має достатньо довіри й привабливості, щоб бути вартим того, аби залучити мене до цього кола.
+
+Мені було дуже приємно.
+
+Час підганяв, і поки ми йшли, залишивши берег, на якому сиділи, і переходили міст Ватанабе, Наокі-сан із по-справжньому щасливою усмішкою розповідав мені про свій бізнес-план. Ця усмішка сяяла яскравіше за літнє сонце.
+`
+      }
+    }
+  },
+  {
+    date: "2026.09.22",
     title: "死に様について",
     body: `
 僕の祖父、忠久さんの、ゆっくりお時間をかけた穏やかな死に方は、自分も周りの人も、それを受け入れられるための準備がよくできるようなものだったと思う。
