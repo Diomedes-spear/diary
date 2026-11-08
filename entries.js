@@ -34,6 +34,93 @@
 const ENTRIES = [
   {
     date: "2026.11.08",
+    title: "カサンドラとアナキン",
+    body: `
+「ヘイデン・クリステンセンがダース・ヴェイダーのヘルメットを被った瞬間に、2つのサーガが完結したんだ。イリアスとオデュッセイアのように」
+
+— ジョージ・ルーカス
+
+僕の愛してやまない物語の一つ、スターウォーズは禅や世界各国の神話だけでなく、イリアスとオデュッセイアの影響を多分に受けている。特に、シリーズにおける最大の見所、"なぜ、最強のジェダイはサイボーグの悪役になったのか"という問いに対する回答は、まさにギリシャ神話の悲劇をなぞっている。
+
+アナキンというキャラクターの危うさは出自、暴力的な衝動、精神的な幼稚さ、そして歴史に類を見ない能力の高さを理解できない上司、など、さまざまな面で描かれている。この「仕事における暗黒面転向の理由」はイリアスの第1章『アキレウスの怒り』と重なるところが非常に多い。しかし今回は、「プライベートライフにおける暗黒面転向の理由」について掘り下げる。アナキンが暗黒に堕ちたのは、仕事とプライベート、両輪が同時に崩れたからだ。
+
+エピソードⅢ「シスの復讐」の序盤、アナキンの人生は既に行き詰まっている。映画の序盤、妻のパドメは妊娠がわかる。そしてアナキンは、パドメとお腹の子をどうしようもなく愛している。しかし、ジェダイの掟はそうした執着を最も禁じている。『執着は喪失の恐れを生む。恐れは怒りに、怒りは憎しみに、憎しみは苦しみへ。』それがジェダイの教え、アナキンの仕事における掟なのだ。アナキンは仕事の掟を破り、プライベートの悦びを優先している状態なのだ。ある夜、アナキンは夢でパドメの死を見た。アナキンは、それを恐れてしまった。なぜなら、前回見た予知夢は本当になったからだ。そして、それは彼が最も愛する母を奪った。様子のおかしいアナキンを気遣うパドメは、死んだりしないと約束するが、アナキンは「いや、僕が約束する。」と言う。アナキンはこのとき、掴んだ幸せに執着し、恐れを抱き、恐れた未来の回避のために自らの能力を注ぐと決めたのだ。この時点で、彼の破滅が決まった。そのあとは知っての通り、アナキンは愛するものを死から救う術を追い求め、それがフォースの暗黒面であるという、エデンの園の蛇の如き暗黒卿パルパティーンの誘いに乗ってしまう。そして、その転向に絶望したパドメは、生きる気力をなくし、アナキンの予知夢は現実になる。恐れを避けようととった行動が、恐れた未来を実現させてしまう。これが『シスの復讐』に込められた教訓の一つだ。
+
+よく似た話がギリシャ神話にもある。トロイの王女カサンドラは、アポロンに愛されていた。アポロンは太陽神、医療の神、芸術の神、そして、予言の神でもあった。アポロンと恋仲になり、その寵愛を受けたカサンドラは未来を視る力を得た。当然、彼女はその力を恋占いに使った。カサンドラが見たのは、愛するアポロンが自分にまもなく愛想をつかし、関係が遊び程度に終わるという未来だった。彼女はその未来を回避するための行動に出た。アポロンに、「私との関係は遊びなのか？」と詰め寄ったのだ。こうしたやり取りは、相手を疲れさせる。太陽神も例外ではなかった。カサンドラの予知は現実のものとなり、さらには神の怒りまでも被った。誰もカサンドラの話を信じなくなるという呪いを、アポロンは彼女に与えた。だから、カサンドラがトロイの木馬の正体を見破ったとき、誰もその話を信じなかった。
+
+オイディプスが予言通りに父、ライオスをそれが父と知らずに殺したのも同じだ。
+
+アナキンもカサンドラもライオスも、恐れた未来を回避するための行動で、その未来を現実のものにしてしまったのだ。
+
+僕は、これは現実の世界でも起こることだと思う。「自分にはこの仕事をうまくやれない」そう思って安全な決断ばかりをした結果、面白味も新鮮味もないアウトプットになり、結果的に失敗となる事がある。「自分は結婚などできない」そう思って闇雲に焦って結婚相手を探した結果、良くない相手と結婚する事もある。
+
+では、反対がいいのか？「自分なら絶対にいい仕事にできる。」「自分はいい男(或いは女)だから、絶対に結婚できる」「パドメは絶対に大丈夫」これも、傲慢（Hubris）という、また別の破滅を招く要因だ。日本語で、"根性論""根拠の無い自信"というやつだ。
+
+では、我々は未来とどう対峙するべきなのか？これは僕の持論だが、"幸福を確信し、仔細を決めず、今を大事にすることに集中する"これがコツだと思う。
+
+"Don't center on your anxieties, Obi-Wan. Keep your concentration here and now, where it belongs."
+`,
+    translations: {
+      en: {
+        title: "Cassandra and Anakin",
+        body: `
+"The moment Hayden Christensen put on Darth Vader's helmet, two sagas were completed — like the Iliad and the Odyssey."
+
+— George Lucas
+
+Star Wars, one of the stories I love most, draws heavily not only on Zen and myths from around the world, but also on the Iliad and the Odyssey. In particular, the answer to the series' biggest draw — the question of why the strongest Jedi became a cyborg villain — traces the shape of a Greek tragedy almost exactly.
+
+The precariousness of Anakin as a character is drawn through many angles: his origins, his violent impulses, his emotional immaturity, and a superior who can't comprehend an ability unmatched in history, among others. This "reason for turning to the dark side at work" overlaps heavily with the first chapter of the Iliad, "The Rage of Achilles." This time, though, I want to dig into the "reason for turning to the dark side in private life." Anakin fell to the dark side because both wheels — work and private life — collapsed at the same time.
+
+By the early part of Episode III, Revenge of the Sith, Anakin's life has already reached a dead end. Early in the film, his wife Padmé learns she's pregnant, and Anakin loves her and the child inside her beyond all reason. But the Jedi code forbids that kind of attachment above all else: "Attachment gives rise to the fear of loss. Fear leads to anger, anger leads to hatred, hatred leads to suffering." That is the Jedi teaching — the code that governs Anakin's work. Anakin is already in a state of breaking the code of his work, prioritizing the joy of his private life. One night, Anakin dreams of Padmé's death. He becomes afraid of it, because the last premonition he had came true — and it took from him the mother he loved most. Padmé, worried about how troubled he seems, promises she won't die, but Anakin says, "No — I promise." At that moment, Anakin decides to cling to the happiness he's grasped, to hold onto his fear, and to pour his own abilities into averting the future he fears. His ruin is sealed from this point on. What follows, as everyone knows: Anakin, seeking a way to save the one he loves from death, falls for the invitation of Darth Sidious — a dark lord like the serpent in the Garden of Eden — who tells him that such a power exists in the dark side of the Force. And Padmé, in despair over his turn to the dark side, loses the will to live, and Anakin's premonition comes true. The action he took to avoid what he feared is exactly what brings that feared future into being. This is one of the lessons built into Revenge of the Sith.
+
+A very similar story exists in Greek mythology, too. Cassandra, princess of Troy, was loved by Apollo. Apollo was the god of the sun, of medicine, of the arts, and also of prophecy. Having fallen into a love affair with Apollo and received his favor, Cassandra gained the power to see the future. Naturally, she used that power to read her own love life. What she saw was a future in which Apollo, the one she loved, would soon grow tired of her, and their relationship would end as nothing more than a passing amusement. She took action to avoid that future — she confronted Apollo directly: "Is what we have just a game to you?" That kind of exchange wears a person down, and even a sun god was no exception. Cassandra's prophecy came true, and on top of that, she incurred the god's wrath. Apollo placed a curse on her: no one would ever believe what she said. That's why, when Cassandra saw through the true nature of the Trojan Horse, no one believed her.
+
+The same thing happened with Oedipus, who, exactly as foretold, killed his father Laius without knowing it was his father.
+
+Anakin, Cassandra, and Laius alike — through the very actions they took to avoid the future they feared, they made that future real.
+
+I think this happens in the real world too. Convinced that "I can't do this job well," someone makes nothing but safe decisions, and the result is output with no interest or freshness to it — which ends up a failure after all. Convinced that "I could never get married," someone searches frantically and blindly for a partner, and ends up marrying the wrong person.
+
+So is the opposite better? "I'm definitely going to make this a great piece of work." "I'm a good man (or woman), so of course I'll get married." "Padmé will definitely be fine." This, too, is another factor that invites a different kind of ruin: hubris. In Japanese, it's what people call konjō-ron — "willpower alone" — or baseless confidence.
+
+So how should we face the future, then? This is just my own view, but I think the trick is this: be confident that happiness will come, don't decide the details in advance, and focus on taking this present moment seriously.
+
+"Don't center on your anxieties, Obi-Wan. Keep your concentration here and now, where it belongs."
+`
+      },
+      uk: {
+        title: "Кассандра і Енакін",
+        body: `
+«Тієї миті, коли Хейден Крістенсен надягнув шолом Дарта Вейдера, завершилися дві саги одразу — як "Іліада" і "Одіссея"».
+
+— Джордж Лукас
+
+«Зоряні війни» — одна з історій, яку я люблю найбільше, — багато в чому надихаються не лише дзен-буддизмом і мітологіями різних народів світу, а й «Іліадою» та «Одіссеєю». Зокрема, відповідь на головну загадку серії — чому найсильніший джедай став кіборгом-лиходієм — майже точно повторює форму грецької трагедії.
+
+Небезпечність персонажа Енакіна показана з багатьох боків: його походження, схильність до насильства, емоційна незрілість, а також начальник, який не здатен зрозуміти рівень здібностей, що не має аналогів в історії, й інше. Ця «причина переходу на темну сторону на роботі» дуже багато в чому перетинається з першою піснею «Іліади» — «Гнів Ахілла». Але цього разу я хочу розібратися саме з «причиною переходу на темну сторону в особистому житті». Енакін впав у темряву тому, що водночас зруйнувалися обидва колеса його життя — робота і особисте.
+
+На початку Епізоду III «Відплата ситхів» життя Енакіна вже зайшло у безвихідь. На початку фільму його дружина Падме дізнається, що вагітна, і Енакін безмежно любить і її, і дитину в її лоні. Але кодекс джедаїв понад усе забороняє саме таку прив'язаність: «Прив'язаність породжує страх втрати. Страх веде до гніву, гнів — до ненависті, ненависть — до страждання». Це настанова джедаїв, кодекс, який керує роботою Енакіна. Енакін уже перебуває в стані, коли порушує кодекс своєї роботи, віддаючи перевагу радості особистого життя. Якоїсь ночі Енакінові присниться смерть Падме. Він злякався цього, бо попереднє передчуття, яке в нього було, справдилося — і воно забрало у нього матір, яку він любив найбільше. Падме, занепокоєна його дивним станом, обіцяє, що не помре, але Енакін каже: «Ні, це я обіцяю». Саме в цю мить Енакін вирішує тримається за щастя, яке здобув, впускає страх і вирішує спрямувати всі свої здібності на те, щоб уникнути майбутнього, якого він боїться. Відтоді його падіння стає неминучим. А далі, як усі знають: Енакін, шукаючи спосіб урятувати кохану людину від смерті, піддається на спокусу лорда ситхів Палпатіна — темного володаря, подібного до змія в Едемському саду, — який каже, що така сила існує в темній стороні Сили. А Падме, у відчаї через його перехід на темну сторону, втрачає волю до життя, і передчуття Енакіна справджується. Дія, яку він вчинив, щоб уникнути страху, саме і втілює той майбутній кошмар, якого він боявся. Це один з уроків, закладених у «Відплаті ситхів».
+
+Дуже схожа історія є й у грецькій мітології. Троянську царівну Кассандру кохав Аполлон. Аполлон був богом сонця, медицини, мистецтв, а також пророцтва. Закохавшись в Аполлона й здобувши його прихильність, Кассандра отримала здатність бачити майбутнє. Звісно, вона використала цю силу, щоб дізнатися про долю свого кохання. Побачила вона майбутнє, в якому Аполлон, якого вона любила, скоро охолоне до неї, і їхні стосунки виявляться не більш ніж забавкою. Вона вчинила так, щоб уникнути цього майбутнього, — прямо запитала в Аполлона: «Для тебе це просто гра?» Такі розмови виснажують будь-кого, і навіть бог сонця не був винятком. Пророцтво Кассандри справдилося, а до того ж вона накликала на себе гнів бога. Аполлон наклав на неї прокляття: ніхто ніколи не повірить її словам. Тому, коли Кассандра розпізнала справжню природу троянського коня, їй ніхто не повірив.
+
+Те саме сталося з Едіпом, який, точно за пророцтвом, убив свого батька Лая, не знаючи, що це його батько.
+
+І Енакін, і Кассандра, і Лай — усі вони саме тими діями, якими намагалися уникнути майбутнього, якого боялися, зробили це майбутнє реальністю.
+
+Думаю, таке трапляється і в реальному світі. Хтось, переконаний, що «я не впораюся з цією роботою добре», ухвалює лише безпечні рішення — і в результаті отримує результат без жодної цікавості чи свіжості, який зрештою стає провалом. Хтось, переконаний, що «я ніколи не зможу одружитися», у паніці й навмання шукає партнера — і зрештою одружується не з тією людиною.
+
+То, може, краще протилежне? «Я точно зроблю цю роботу добре». «Я хороший чоловік (чи хороша жінка), тож точно зможу одружитися». «З Падме точно все буде гаразд» — усе це теж є ще одним чинником, що веде до іншого виду руйнування: гординею (hubris). Японською це називають «конджьорон» — щось на зразок «сили самої лише волі» — або безпідставна самовпевненість.
+
+Тож як нам варто ставитися до майбутнього? Це лише моя власна думка, але мені здається, що секрет такий: бути впевненим, що щастя прийде, не вирішувати наперед усіх деталей і зосередитися на тому, щоб цінувати цей момент.
+
+«Не зосереджуйся на своїх тривогах, Обі-Ване. Зосередь свою увагу тут і зараз, де їй і належить бути».
+`
+      }
+    }
+  },
+  {
+    date: "2026.11.08",
     title: "新渡戸稲造について",
     body: `
 彼は私の最も尊敬する人物の1人だった。彼は『武士道』の著者であり、国際連盟事務次長として国際的なキャリアを積んだ。彼曰く、「日本人ではなく、国際人であること」が今後の世界を生きていく上で重要だという。しかし今日では、そんな考えはまたしても弱まり、自国優先の政治が支持される機運、不寛容が世界各地で高まっている。これは1800年代後半の帝国主義の時代や、1930年代の自由貿易経済崩壊とよく似ている。そんな時に彼の人生や彼の著作に触れるのは、日本に生を受けた者としては非常に人に薦めたいものである。
