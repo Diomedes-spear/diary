@@ -33,6 +33,105 @@
 
 const ENTRIES = [
   {
+    date: "2026.11.08",
+    title: "新渡戸稲造について",
+    body: `
+彼は私の最も尊敬する人物の1人だった。彼は『武士道』の著者であり、国際連盟事務次長として国際的なキャリアを積んだ。彼曰く、「日本人ではなく、国際人であること」が今後の世界を生きていく上で重要だという。しかし今日では、そんな考えはまたしても弱まり、自国優先の政治が支持される機運、不寛容が世界各地で高まっている。これは1800年代後半の帝国主義の時代や、1930年代の自由貿易経済崩壊とよく似ている。そんな時に彼の人生や彼の著作に触れるのは、日本に生を受けた者としては非常に人に薦めたいものである。
+
+彼を語る上で欠かせないのは、やはり『武士道』だろう。米国でこれがベストセラーとなったのは、1900年の刊行時ではなく、1905年に日本の海軍がロシアのバルチック艦隊を破ってからだ。欧米の列強と言われる国々の間で、その一角であるロシアを破った小国に注目の目が注がれていたのだ。なぜ、原始的な民族が急速に近代化を遂げ、近代化の最高到達点の一つである海軍を創り上げ、しまいには世界最強の艦隊を破るに至れたのか？日本人とやらの宗教や社会構造は、中国人や朝鮮人とどう違うのか、どう欧米と共通し、どう異なるのか？
+
+その答えが『武士道』に書かれていた。新渡戸博士曰く、"武士道とは、表徴たる桜花と同じく、日本の土地に固有の花"である。欧米における宗教の役割、人が善と悪を選り分ける秤、社会構造と治安を保たせる経典、先人が経験から得た智慧を子孫に引き継ぐための教えといった意味を日本では武士道が担っている。しかし、比較して異なるのはそれが明文化されていないことだ。各家庭や社会の中で口伝されて引き継がれていくものだが、幕府の法や歴史的教訓、社会構造と密接に結びついていることから、ズレる事がないという、何とも不思議な整理を新渡戸博士はしている。これを古今東西の哲学と政治学に明るい新渡戸博士が体系的に言語化したものに、彼が武士道と名をつけた。具体的には、以下の七つの徳が、武家社会以来、日本人の自己規律の規範となっているという。
+
+義/正しい道を判断する軸
+
+勇/義を実行する勇気
+
+仁/他者への思いやり・慈愛・寛容の心
+
+礼/相手への敬意を表す行動
+
+誠/嘘をつかない、言ったことに責任を持つ
+
+名誉/品位を保ち、不名誉を恥とする心
+
+忠義/主のやるべき務めに共に尽くす行為
+
+新渡戸稲造博士はこれらそれぞれについて、日本の故事や西洋の哲学を引用、比較しながら『武士道』の中で雄弁に語った。それらは、私が大学時代に読んだ時から、確かに私の中で物事の判断基準の一つとなっている。
+
+しかし、近頃はこの武士道の教えに縛られるべきではないという感覚も併せ持つようになった。
+
+一つは、徳の追求は必ずしも正しくはないということ。新渡戸博士の武士道における義、仁、礼の三つはそのまま儒学の五徳から来ている。仁義礼智信のことだ。戦国時代の大名、伊達政宗はこれについて以下の金言を残している。「仁に過ぐれば弱くなる、義に過ぐれば固くなる、礼に過ぐれば諂いとなる、智に過ぐれば嘘をつく、信に過ぐれば損をする」
+
+二つは、ムーブメントの背景である日露戦争における日本の勝利について。現在の私個人の私見としては、これは日本人武士道や克己とやらが掴んだものでは無いと思う。1902年以来日本の同盟国であった大英帝国がヨーロッパからインドまでの全ての港を封鎖したため、バルチック艦隊はバルト海からケープタウンを迂回し、インドを抜けるまで港での補給が不可能だった。そのために、疲弊した状態で日本海軍と決戦した事。それが最大の要因だ。つまり、戦争の英雄は海軍司令官東郷平八郎でもなく、武士道でもなく、戦争の2年前に日英同盟を取り付けた外交官、私のもう1人の尊敬する人物、ねずみ公使こと小村寿太郎である。
+`,
+    translations: {
+      en: {
+        title: "On Nitobe Inazo",
+        body: `
+He was one of the people I admire most. He was the author of Bushido: The Soul of Japan, and built an international career as Under-Secretary-General of the League of Nations. In his view, what matters for living in the world to come is "being not a Japanese, but an internationalist." Today, though, that kind of thinking has once again grown weaker, and a mood favoring my-country-first politics, along with intolerance, is rising in every corner of the world. This closely resembles the age of imperialism in the late 1800s, or the collapse of the free-trade economy in the 1930s. At a time like this, encountering his life and his writing is something I would very much recommend to anyone, as someone born in Japan.
+
+What's indispensable to talking about him is, of course, Bushido. It became a bestseller in the United States not when it was first published in 1900, but after Japan's navy defeated Russia's Baltic Fleet in 1905. Among the countries called the great powers of the West, attention turned toward this small nation that had defeated Russia, one of their own number. Why had this supposedly primitive people modernized so rapidly, built a navy — one of the highest achievements of modernization — and ultimately come to defeat the strongest fleet in the world? How did the religion and social structure of this people called the Japanese differ from the Chinese or Koreans, and in what ways did they resemble or differ from the West?
+
+The answer was written in Bushido. As Dr. Nitobe put it, "Bushido, like its emblem the cherry blossom, is a flower indigenous to the soil of Japan." In Japan, Bushido carries the roles that, in the West, belong to religion, to the scale by which people sort good from evil, to the scripture that holds together social structure and public order, and to the teachings by which the wisdom earlier generations gained through experience is passed down to their descendants. What's different, by comparison, is that it was never written down. It's something handed down by word of mouth within each household and community — and yet, Dr. Nitobe makes the curious observation that, precisely because it's so closely bound up with the shogunate's laws, historical lessons, and social structure, it never drifts out of alignment. It was Dr. Nitobe — well-versed in philosophy and political science across every age and country — who systematically put this into words, and he's the one who gave it the name Bushido. Specifically, he says the following seven virtues have served, ever since the age of the warrior class, as the standard of self-discipline for the Japanese.
+
+Gi (義) — the axis by which one judges the right path
+
+Yu (勇) — the courage to carry out gi
+
+Jin (仁) — benevolence, compassion, and a generous heart toward others
+
+Rei (礼) — conduct that expresses respect for another person
+
+Sei (誠) — not lying, taking responsibility for what you've said
+
+Meiyo (名誉) — honor: keeping one's dignity, and treating disgrace as shameful
+
+Chugi (忠義) — devoting oneself, together with one's lord, to the duty that must be done
+
+Dr. Nitobe Inazo spoke eloquently about each of these in Bushido, drawing on and comparing episodes from Japanese history with Western philosophy. Ever since I read it in my university years, those virtues have genuinely become one of the standards by which I judge things.
+
+Lately, though, I've also come to feel that I shouldn't be bound by these teachings of Bushido.
+
+One reason is that the pursuit of virtue isn't necessarily correct. The three virtues of gi, jin, and rei in Dr. Nitobe's Bushido come directly from the five Confucian virtues — benevolence, righteousness, propriety, wisdom, and sincerity. Date Masamune, a daimyo of the Warring States period, left behind this golden saying about them: "Too much benevolence makes one weak; too much righteousness makes one rigid; too much propriety becomes flattery; too much wisdom leads one to lie; too much trust leads one to loss."
+
+The other reason concerns Japan's victory in the Russo-Japanese War, the backdrop to this whole movement. My own personal view, at present, is that this was not something Japanese Bushido or self-mastery managed to seize. Because the British Empire — Japan's ally since 1902 — blockaded every port from Europe to India, the Baltic Fleet had no way to resupply at any port as it went around the Cape of Good Hope from the Baltic Sea and on through India. Because of that, it fought its decisive battle against the Japanese navy already exhausted. That was the decisive factor. In other words, the hero of that war was neither the naval commander Togo Heihachiro nor Bushido itself, but the diplomat who, two years before the war, secured the Anglo-Japanese Alliance — another person I deeply admire — Komura Jutaro, known as "the Rat Minister."
+`
+      },
+      uk: {
+        title: "Про Нітобе Інадзо",
+        body: `
+Він був однією з людей, яких я поважаю найбільше. Він — автор книги «Бусідо: душа Японії» і зробив міжнародну кар'єру як заступник генерального секретаря Ліги Націй. На його думку, для життя у світі, що настає, важливо «бути не японцем, а інтернаціоналістом». Однак сьогодні така думка знову слабшає, і в усіх куточках світу зростають настрої на користь політики «своя країна — понад усе» та нетерпимість. Це дуже схоже на епоху імперіалізму кінця XIX століття або на крах вільної торгівлі у 1930-х роках. У такий час звернутися до його життя й творчості — це те, що я, як людина, народжена в Японії, дуже рекомендую.
+
+Говорячи про нього, не можна обійти книгу «Бусідо». Бестселером у США вона стала не тоді, коли вийшла друком у 1900 році, а після того, як японський флот розбив російську Балтійську ескадру в 1905 році. Серед країн, які називали себе великими державами Заходу, увагу привернула маленька країна, що здолала одну з них — Росію. Чому цей начебто первісний народ так швидко модернізувався, створив військово-морський флот — одне з найвищих досягнень модернізації — і зрештою здолав найсильнішу ескадру світу? Чим релігія та соціальна структура цих японців відрізнялися від китайців чи корейців, у чому вони були подібні до Заходу, а в чому — відмінні?
+
+Відповідь на це було написано саме в «Бусідо». За словами доктора Нітобе, «Бусідо, як і сакура — його символ, — квітка, притаманна лише японській землі». У Японії Бусідо виконує ту роль, яку на Заході відігравала релігія: це терези, якими люди відділяють добро від зла, це писання, що тримає соціальну структуру й суспільний порядок, це настанови, якими мудрість, здобута досвідом попередніх поколінь, передається нащадкам. Проте порівняно з ними є одна відмінність — Бусідо ніде не записане. Воно передається усно в кожній родині й спільноті, і водночас, як не дивно, доктор Нітобе стверджує, що саме тому, що воно тісно пов'язане із законами сьогунату, історичними уроками та соціальною структурою, воно ніколи не «з'їжджає» зі свого місця. Саме доктор Нітобе — людина, обізнана в філософії та політології всіх часів і народів, — систематично висловив це словами, і саме він дав цьому назву «Бусідо». Конкретно, за його словами, ось ці сім чеснот від часів самурайського суспільства й донині слугують нормою самодисципліни для японців.
+
+Ґі (義) — вісь, за якою судять про правильний шлях
+
+Ю (勇) — мужність втілити ґі в дію
+
+Дзін (仁) — співчуття, милосердя й доброта до інших
+
+Рей (礼) — поведінка, що виражає шанобливість до іншої людини
+
+Сей (誠) — не брехати, відповідати за власні слова
+
+Мейо (名誉) — честь: зберігати гідність і соромитися безчестя
+
+Чуґі (忠義) — віддано служити разом зі своїм паном тому обов'язку, який має бути виконаний
+
+Доктор Нітобе Інадзо красномовно розповів про кожну з цих чеснот у «Бусідо», наводячи приклади з японської історії та порівнюючи їх із західною філософією. Відтоді, як я прочитав цю книгу в студентські роки, ці чесноти й справді стали для мене одним із критеріїв, за якими я оцінюю речі.
+
+Проте останнім часом я водночас відчуваю, що не варто бути зв'язаним цими настановами Бусідо.
+
+По-перше, прагнення до чеснот не завжди є правильним. Три чесноти — ґі, дзін і рей — у «Бусідо» доктора Нітобе прямо походять із п'яти конфуціанських чеснот: гуманності, справедливості, етикету, мудрості та довіри. Дате Масамуне, даймьо епохи Воюючих провінцій, залишив про це такий золотий вислів: «Надмір гуманності робить слабким, надмір справедливості робить негнучким, надмір етикету стає підлабузництвом, надмір мудрості змушує брехати, надмір довіри призводить до збитків».
+
+По-друге, щодо перемоги Японії в Російсько-японській війні — тлі, на якому виник цей рух. Моя особиста думка зараз така, що цю перемогу здобуло не японське Бусідо чи якесь самовладання. Британська імперія, союзник Японії з 1902 року, заблокувала всі порти від Європи до Індії, тож Балтійська ескадра не мала можливості пополнити запаси в жодному порту, обходячи мис Доброї Надії з Балтійського моря аж до Індії. Через це вона вступила в головну битву з японським флотом уже виснаженою. Це і було головним чинником. Іншими словами, героєм тієї війни був не адмірал Того Хейхачіро і не Бусідо, а дипломат, який за два роки до війни забезпечив англо-японський союз — ще одна людина, яку я глибоко поважаю, — Комура Дзютаро, відомий як «міністр-пацюк».
+`
+      }
+    }
+  },
+  {
     date: "2026.09.22",
     title: "河岸の太陽",
     body: `
