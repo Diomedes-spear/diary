@@ -33,6 +33,243 @@
 
 const ENTRIES = [
   {
+    date: "2026.11.18",
+    title: "大名に学ぶ（名将編）",
+    body: `
+16世紀の日本は、大乱の後政府の権力が弱まった混乱の時代である。各土地で有力な武士がその土地を実行支配し、城を築き、固有の法と力で国を築いた。彼らは、大名と呼ばれた。大名たちの国々が生き残りをかけて戦いが絶えなかったこの時代は、戦国時代(国同士が戦う時代という意味)と呼ばれる。戦国大名たちは、今でもその土地の英雄であり、混沌を生きた彼らの領国経営哲学は、現代を生きる日本人にも大いなる学びを与え続けている。今回は、この時代の最も優れた6人の大名の功績と名言を紹介する。
+
+北条早雲
+
+【紹介】
+戦国大名の先駆けとなる存在である。伊豆・相模国（現在の静岡・神奈川県）を支配した。弱体化した旧体制室町幕府のいち官僚から身を起こし、6人の仲間と関東で独自の内政組織を構築した。由緒ある支配者、堀越公方を滅ぼし、小田原城を奪取して関東支配の足場を築いた。重税に苦しむ農民の税を大幅に引き下げて保護し、強固な民衆の支持を獲得した。
+
+【遺した名言】
+「人にすかれんと思はば、心より人の身を大切にする事也。」
+解説: 一介の官僚から戦国大名へと成り上がれたのは、単なる武力による制圧ではなく、伊豆や相模の国人・百姓たちの既得権益や生活を心から尊重し、味方につけたからである。人を動かす本質はテクニックではなく、真の利他主義にあるという早雲の生存戦略を示している。
+
+武田信玄
+
+【紹介】
+戦国武将の中で誰もが畏怖する完成度を誇る軍と国家を築き、後に江戸幕府がそれを真似た。甲斐国（現在の山梨県周辺）を支配した。山本勘助らを参謀とし、最強の騎馬軍団を率いて徳川家康を三方ヶ原で粉砕した。治水工事や法律の整備により領民を保護し支持と信頼を集めた。信玄は、天下統一を目指して京都へ進軍する途上で病死した。彼の死は次代の覇権構造に大きく影響し、新たな実力者、織田信長によって、彼の国は息子の代で滅ぼされた。
+
+【遺した名言】
+「人は城、人は石垣、人は堀。情けは味方、仇は敵なり。」
+解説: 優秀な人材を発掘し人の心を掴むことこそが、最強の防衛システムであるという哲学。信玄は、内外から優秀な侍をリクルートし、武田二十四将という、それぞれ長所の異なる家臣団を構築した。このタレントシステムとその強固な国家経営は、あらゆる大名に手本とされた。
+
+「為せば成る、為さねば成らぬ。成る業を成らぬと捨つる人の儚さ。」
+解説: 信玄は、急流で氾濫を繰り返す釜無川に対し、20年以上の歳月をかけて「信玄堤（しんげんづつみ）」という巨大な治水工事を完成させた。最初から不可能だと諦めず、執念を持って継続すれば必ず成し遂げられるという、信玄の泥臭いまでの実行力と組織的忍耐を示すエピソードである。
+
+「喧嘩両成敗」
+解説: 私的な争いを起こした者は、理由の如何を問わず両者を処罰する。「どちらが正しいか」という感情より、共同体の秩序を優先する統治は、平和な暮らしを甲斐国にもたらした。
+
+織田信長
+
+【紹介】
+この時代最大の革新者である。最大の脅威であった信玄の死は、彼が躍進する大きな要因だった。尾張国（愛知県）で立身し、琵琶湖のほとりに築いた安土城から日本の中央を支配した。実力主義の出世システムや、キリスト教の保護、伝統的な税制を撤廃した自由な交易システムなど、政治経済宗教、全てにおいて近代的な組織を構築した。戦場においても、雨音に隠れた奇襲や鉄砲の集中運用で騎馬隊を破るなど、旧来の戦術を破壊した。既得権益から恨まれてなお、革新を続けたのは、海の向こうを意識していたからである。天下の目前に最も信頼した明智光秀に突然裏切られ、京都の本能寺の炎の中で自害した。その裏切りの背後に居る黒幕は、今もなお謎のままである。
+
+【遺した名言】
+「是非に及ばず。」
+解説: 最も優秀な部下、明智光秀の謀反を知った際の言葉。「もはや次の行動を議論をしている状況ではない」と運命を瞬時に受け入れる、究極のプラグマティズム。寺に火を放ち、自害した信長の亡骸は炎の中で見つからず、武士の勝利の手柄たる首が光秀の手に入らなかった。そのため光秀は織田方の動揺を抑えきれず、約10日後、山崎の戦いで羽柴秀吉に敗れ、逃走中に討たれた。
+
+「仕事は作り出すものだ。自ら見つけるものだ。与えられた仕事をこなすのは、雑兵だ。用事を済ませられ無かったからと帰るのは、愚か者だ。その点貴様は落ちている塵を拾った。なかなか感心である」
+解説: 信長はひたすらに既得権益の敵だった。彼の敵を支援する比叡山の坊主や快川和尚を焼き殺し、座や関税を撤廃した。伝統ではなく、実力と合理的な判断によって自由と勝利を勝ち取るのが、信長の哲学だった。そのためには、既存のルール通りの仕事ではなく、塵がそこにある違和感に気づき、解決しなければならない。
+
+徳川家康
+
+【紹介】
+戦国時代を終わらせた。気が熟すのを待ち、全ての味方と共に全ての敵を倒し、江戸幕府を開いた。彼の最大の武器は知性でも、血筋でも、学習欲でも、家臣団でもなく、忍耐であった。武田信玄を真似た組織、信長から学んだ合理性、そして隠し持った野心。信長の死後、勝者となった豊臣家に表では忠誠を誓いながら、裏では自らの権力基盤を拡大した。それを糾弾する者たちを敢えて団結させ、自らの味方と共に日本の中心に位置する岐阜県の関ヶ原で決戦し、6時間の戦闘で全てを手にした。260年続く江戸幕府の身分制度や法律という巨大組織の基礎を構築し、晩年は絶対的な権力を持ったまま天寿を全うした。
+
+【遺した名言】
+「平家を滅ぼすのは平家なり、鎌倉を滅ぼすのは鎌倉なり」
+解説: 家康は歴史を知っていた。最も信頼する者に裏切られた織田信長や、晩年に後継問題で迷走し、幼い跡取りを残して逝った豊臣秀吉を、間近で見ていた。彼の生きた時代の約400年前も、武家の先駆けであった平家が、約270年前には、鎌倉幕府が、同じように時間による劣化変質と裏切りによって滅んだのだ。
+
+「勝つことばかり知りて、負くること知らざれば、害その身に至る。」
+解説: 家康は若くから戦上手として知られた。しかし、三方ヶ原で武田信玄の無敵の騎馬隊の前に惨敗し、逃げながら脱糞するほどの恐怖を味わったと伝えられる。その時の自分の怯えた絵を家来に描かせ、いかなる勝利にも甘んじない、非常に慎重なチェスプレイヤーのような武人に成長した。
+
+伊達政宗
+
+【紹介】
+陸奥国（現在の東北地方）を支配した。病気で片眼を失くし、独眼竜と称された。片目を抉り取る処置をした随一の参謀、片倉景綱と共に蘆名氏を摺上原で破り、一族の悲願であった南奥州の覇権を政宗の代で握った。関ヶ原の戦いでは徳川方に属し戦場、外交の両方で勝利に貢献した。生き残りのために表で大袈裟に強者に忠誠を誓い、裏では様々な細工をめぐらす人物である。幕府の許可を得つつも独自の思惑でスペイン・ローマへ外交使節を派遣する国際的な感覚、瀬戸際まで豊臣に膝を曲げず勝ち馬を見極めるギャンブル、徳川に付きながら、大坂の陣で戦った真田信繁の遺児を家臣の片倉重長に保護させ保険をかけるなど、清廉潔白とは言えない、トリックスター的な一面がある。晩年は江戸幕府の重鎮として若き将軍に慕われた。
+
+【遺した名言】
+「仁に過ぐれば弱くなる。義に過ぐれば固くなる。礼に過ぐれば諂（へつら）いとなる。智に過ぐれば嘘を吐く。信に過ぐれば損をする。」
+解説: 儒教の五徳について。いたずらに徳や功を追うのではなく、極端な偏りを避けてバランス感覚を持った柔軟な個人になれという教えは、大胆不敵で政宗らしい洞察である。
+
+「この世に客に来たと思えば何の苦もなし。」
+解説: 自分の人生や地位、財産を「永遠に所有するもの」と執着するから苦しみが生まれる。この世界には一時的な「客」として滞在しているだけだと思えば、あらゆる困難や喪失も平然と受け入れられるという、政宗の達観した死生観。
+
+毛利元就
+
+【紹介】
+西国の覇者。孫氏の兵法の最高の体現者。策略と組織構築において、彼の右に出る者は日本の歴史にいない。直道の別格のお気に入りである。安芸国（現在の広島県）から中国地方の大半を支配した。厳島の戦いで、事前の情報操作と水軍を活かした見事な奇策で大軍を撃破した。また、二人の才覚溢れる息子を、名家である吉川家、小早川家に養子として送り込み、両家を乗っ取らせた。毛利を政治的中核とし、吉川を陸軍、小早川を海軍として、元就の血族による支配体制を構築した。この「毛利両川体制」は三本の矢の教えとして有名な兄弟の絆を説く逸話の背景となった。元就の代で戦国大名として興った毛利家は、その後長州藩として江戸時代を生き延び、幕末には倒幕の中心となった。
+
+【遺した名言】
+「謀多きは勝ち、少なきは負ける。」
+解説: 元就は、厳島の戦いで約4千人で約2万人の軍勢を破り、中国地方の覇者となった。元就は、強大な敵である大内氏の重臣、陶晴賢が主君の大内義隆を討つ政変（大寧寺の変）に乗じて勢力を拡大した。今度はその陶晴賢を挑発し、入り組んだ浅瀬にある厳島に大軍勢をおびき寄せた。厳島に築いた囮城に、陶晴賢と因縁のある武将を配置したのだ。さらに、囮城を築いたのは失敗だった、と陶晴賢のスパイの前で後悔する芝居を見せて、あたかも弱点であるかのように偽情報を流した。陶晴賢が厳島の城を包囲した時、元就は島を包囲して敵を殲滅した。逃げようとした敵は全て海上で討ち取られた。元就は、瀬戸内海の海賊（村上水軍）と密かに同盟を築いており、この日厳島を海上封鎖したのだ。そしてスパイは、「内通ご苦労」と言い渡され、首を斬られて海に捨てられたと伝えられる。この言葉は、厳島の伝説的な勝利を説明するかのような哲学である。
+
+「天下を競望せず」
+解説: 元就は中国地方の覇者となった後も、無謀に中央（京都）へ進出して天下を狙うことを厳しく禁じた。自身の器量と国力を冷徹に見極め、中国地方の支配が最もバランスのとれた状態であると判断した。吉川元春・小早川隆景ら息子たちに「現状の領国を死守し、一族の存続を最優先せよ」と遺訓を残し、毛利宗家をサポートするよう命じた。この徹底したリスク回避と身の丈に合った大戦略の徹底は、元就の死後も2人の息子によって機能し続けた。
+`,
+    translations: {
+      en: {
+        title: "Lessons from the Daimyo (The Great Generals)",
+        body: `
+Sixteenth-century Japan was an age of chaos, when the central government's authority had weakened in the wake of great upheaval. In each region, powerful warriors took effective control of their own territory, built castles, and constructed their own domains through their own laws and their own strength. These men were called daimyo. This era, in which the daimyo's domains fought ceaselessly for survival, is known as the Sengoku period — the "Age of Warring States." The Sengoku daimyo remain heroes of their home regions to this day, and the philosophy of domain management they lived out amid that chaos continues to offer a great deal for Japanese people living in the present to learn from. This time, I want to introduce the achievements and famous sayings of the six greatest daimyo of this era.
+
+Hojo Soun
+
+[Profile]
+He was the forerunner of the Sengoku daimyo. He ruled the provinces of Izu and Sagami (present-day Shizuoka and Kanagawa prefectures). Rising from a minor official of the weakened old regime, the Muromachi shogunate, he built his own domestic administrative organization in the Kanto region together with six companions. He destroyed the long-established ruler known as the Horigoe Kubo, seized Odawara Castle, and built the foothold from which he would come to control Kanto. He dramatically lowered the taxes of farmers suffering under heavy levies and protected them, winning himself solid popular support.
+
+[A saying he left behind]
+"If you wish to be loved by others, you must, from the heart, treasure the person of others."
+Commentary: The reason he was able to rise from a mere official to a Sengoku daimyo was not simply military conquest — it was that he sincerely respected the vested interests and the lives of the local lords and peasants of Izu and Sagami, and won them over as allies. This saying shows Soun's survival strategy: that the true essence of moving people lies not in technique, but in genuine altruism.
+
+Takeda Shingen
+
+[Profile]
+He built an army and a state whose perfection every Sengoku warlord feared, one the later Edo shogunate would go on to imitate. He ruled Kai Province (present-day Yamanashi Prefecture and its surroundings). With strategists such as Yamamoto Kansuke at his side, he led the strongest cavalry corps of the age and crushed Tokugawa Ieyasu at Mikatagahara. Through flood-control works and the establishment of laws, he protected his subjects and earned their support and trust. Shingen died of illness while on the march to Kyoto in pursuit of unifying the realm. His death greatly affected the power structure of the next era, and his domain was ultimately destroyed, in his son's generation, by the new power that rose in his place: Oda Nobunaga.
+
+[Sayings he left behind]
+"People are the castle, people are the stone walls, people are the moat. Compassion is an ally; cruelty is an enemy."
+Commentary: This reflects the philosophy that discovering excellent people and winning their hearts is itself the strongest system of defense there is. Shingen recruited outstanding samurai from both within and outside his domain, building a retainer band known as the Twenty-Four Generals of Takeda, each bringing a different strength. This talent system, and the robust state it built, became a model for every daimyo.
+
+"If you act, it can be done. If you don't act, it cannot. How fleeting are those who abandon as impossible a task that could in fact be done."
+Commentary: Shingen spent more than twenty years completing a vast flood-control project — the "Shingen Levee" — against the Kamanashi River, which repeatedly flooded in violent torrents. This episode shows Shingen's gritty, hands-on capacity for execution and his organizational patience: that giving up from the start as impossible accomplishes nothing, and that anything can be achieved if pursued with relentless determination.
+
+"Both sides are punished in a quarrel."
+Commentary: Whoever started a private dispute, regardless of the reason, both parties were punished. Governing by prioritizing the order of the community over the feeling of "who was right" brought peace to daily life in Kai Province.
+
+Oda Nobunaga
+
+[Profile]
+He was the greatest innovator of this era. The death of Shingen, who had been his greatest threat, was a major factor in his rapid rise. Rising to prominence in Owari Province (Aichi Prefecture), he ruled the center of Japan from Azuchi Castle, which he built on the shore of Lake Biwa. He built modern institutions across the board — in politics, economics, and religion alike — including a meritocratic system of advancement, the protection of Christianity, and a free system of trade that abolished the traditional tax regime. On the battlefield, too, he destroyed old-fashioned tactics, carrying out surprise attacks concealed by the sound of rain and defeating cavalry units through the concentrated use of firearms. He kept pursuing innovation even while resented by vested interests, because his gaze was always fixed on the world beyond the sea. On the very brink of unifying the realm, he was suddenly betrayed by Akechi Mitsuhide, the retainer he trusted most, and took his own life amid the flames of Honnoji Temple in Kyoto. The mastermind behind that betrayal remains a mystery to this day.
+
+[Sayings he left behind]
+"There is no help for it."
+Commentary: These were his words upon learning of the treachery of his most capable retainer, Akechi Mitsuhide. They show an ultimate pragmatism — instantly accepting one's fate rather than debating what to do next. Nobunaga set the temple ablaze and took his own life, but his body was never found amid the flames, so Mitsuhide never obtained the head that would have been the proof of a samurai's victory. Because of this, Mitsuhide was unable to contain the unrest within the Oda camp, and roughly ten days later he was defeated by Hashiba Hideyoshi at the Battle of Yamazaki and killed while fleeing.
+
+"Work is something you create. It's something you find for yourself. Carrying out the work you're given is a job for a common soldier. Coming back because you couldn't finish your errand is the mark of a fool. On that score, you picked up a piece of trash lying on the ground — that's rather admirable."
+Commentary: Nobunaga was, through and through, an enemy of vested interests. He burned to death the monks of Mount Hiei and the priest Kaisen, who supported his enemies, and abolished trade guilds and toll barriers. Nobunaga's philosophy was to win freedom and victory through ability and rational judgment, not tradition. To do that, one must not simply carry out work according to existing rules, but notice the sense of wrongness in the trash lying right there, and resolve it.
+
+Tokugawa Ieyasu
+
+[Profile]
+He brought the Sengoku period to an end. Waiting for the moment to ripen, he defeated every enemy together with every ally, and opened the Edo shogunate. His greatest weapon was neither intelligence, nor lineage, nor a thirst for learning, nor his retainer band — it was patience. He combined an organization modeled on Takeda Shingen's, the rationality he learned from Nobunaga, and an ambition he kept carefully hidden. After Nobunaga's death, while publicly swearing loyalty to the victorious Toyotomi house, he secretly expanded his own power base behind the scenes. He deliberately let those who condemned him for it unite against him, then fought a decisive battle together with his own allies at Sekigahara, in Gifu Prefecture at the very center of Japan, and in six hours of fighting won everything. He built the foundation of a vast system — the status hierarchy and laws of the Edo shogunate — that would last 260 years, and in his later years lived out his natural span of life while holding absolute power.
+
+[Sayings he left behind]
+"It is the Taira who destroy the Taira; it is Kamakura that destroys Kamakura."
+Commentary: Ieyasu knew his history. He had watched up close as Oda Nobunaga was betrayed by the man he trusted most, and as Toyotomi Hideyoshi, in his final years, floundered over the question of succession and died leaving behind a young heir. Roughly four hundred years before his own time, the Taira — forerunners of the warrior class — and roughly two hundred seventy years before, the Kamakura shogunate, had each likewise been destroyed through the same slow decay and betrayal wrought by time.
+
+"If you know only how to win, and do not know how to lose, harm will come to you."
+Commentary: Ieyasu was known from a young age as a skilled warrior. Yet he suffered a crushing defeat before Takeda Shingen's invincible cavalry at Mikatagahara, and is said to have been so terrified while fleeing that he soiled himself. He had his retainers paint a portrait of his own terrified face at that moment, and grew into a warrior like an extremely cautious chess player, never resting easy on any single victory.
+
+Date Masamune
+
+[Profile]
+He ruled Mutsu Province (present-day Tohoku region). Having lost one eye to illness, he was known as the One-Eyed Dragon. Together with Katakura Kagetsuna, his foremost strategist — the very man who had performed the procedure to remove that eye — he defeated the Ashina clan at Suriagehara, and in Masamune's own generation seized the hegemony over southern Oshu that had been his clan's long-cherished ambition. At the Battle of Sekigahara, he sided with the Tokugawa and contributed to their victory both on the battlefield and through diplomacy. He was a man who, for the sake of survival, swore exaggerated loyalty to the powerful in public while scheming all manner of things behind the scenes. His conduct was anything but spotless, and he had a trickster-like side to him: an international sensibility that led him, with shogunal permission but very much on his own initiative, to dispatch a diplomatic mission to Spain and Rome; a gambler's instinct for reading the winning horse that kept him from bowing to the Toyotomi even at the eleventh hour; and, even while siding with the Tokugawa, having his retainer Katakura Shigenaga secretly protect the orphaned child of Sanada Nobushige, who had fought against them at the Siege of Osaka, as a kind of insurance policy. In his later years he was beloved by the young shogun as a senior statesman of the Edo shogunate.
+
+[Sayings he left behind]
+"Too much benevolence makes one weak. Too much righteousness makes one rigid. Too much propriety becomes flattery. Too much wisdom leads one to lie. Too much trust leads one to loss."
+Commentary: This concerns the five Confucian virtues. The teaching here — that one should not chase after virtue or merit for its own sake, but should instead avoid extreme imbalance and become a flexible person with a sense of balance — is a bold, characteristically Masamune insight.
+
+"If you think of yourself as a guest come into this world, nothing is any hardship at all."
+Commentary: Suffering is born from clinging to one's own life, status, and possessions as things one owns forever. Masamune's detached view of life and death held that if you think of yourself as merely a temporary "guest" staying in this world, you can accept any hardship or loss with equanimity.
+
+Mori Motonari
+
+[Profile]
+The hegemon of western Japan. The supreme embodiment of Sun Tzu's Art of War. In strategy and institution-building, no one in Japanese history surpasses him. He is Naomichi's own special favorite among them all. Ruling from Aki Province (present-day Hiroshima Prefecture), he came to control most of the Chugoku region. At the Battle of Itsukushima, through advance information manipulation and a brilliant stratagem that made full use of his navy, he crushed a vastly larger army. He also sent two of his gifted sons as adopted heirs into the prestigious Kikkawa and Kobayakawa houses, having them effectively take over both clans. With the Mori house as the political core, and the Kikkawa serving as its army and the Kobayakawa as its navy, he built a system of rule by Motonari's own bloodline. This "Mori Ryosen" (Two Rivers) system became the backdrop for the famous episode teaching the bond between brothers through the lesson of the three arrows. The Mori house, which rose to become a Sengoku daimyo in Motonari's generation, went on to survive the Edo period as the Choshu domain, and became a central force behind the overthrow of the shogunate at the end of the Edo era.
+
+[Sayings he left behind]
+"Many stratagems bring victory; few bring defeat."
+Commentary: At the Battle of Itsukushima, Motonari defeated an army of roughly twenty thousand with a mere four thousand men, becoming the hegemon of the Chugoku region. Motonari expanded his power by taking advantage of a coup (the Taineiji Incident), in which Sue Harukata, a senior retainer of the powerful Ouchi clan, struck down his own lord, Ouchi Yoshitaka. He then provoked that very Sue Harukata, luring his massive army onto Itsukushima, an island surrounded by intricate shallows. In the decoy castle he built on Itsukushima, he stationed a commander who had a personal grudge against Sue Harukata. What's more, in front of Sue Harukata's own spy, he staged a performance of regretting that building the decoy castle had been a mistake, spreading false information to make it look like a weakness. When Sue Harukata laid siege to the castle on Itsukushima, Motonari surrounded the island and annihilated the enemy. Every enemy soldier who tried to flee was cut down at sea. Motonari had secretly formed an alliance with the pirates of the Seto Inland Sea, the Murakami navy, and on that day they blockaded Itsukushima by sea. The spy, it's said, was told, "Thank you for your treachery," then beheaded and thrown into the sea. This saying reads almost like a philosophy explaining the legendary victory at Itsukushima.
+
+"Never compete for the realm."
+Commentary: Even after becoming the hegemon of the Chugoku region, Motonari strictly forbade any reckless advance on the center — Kyoto — to contend for rule over the entire realm. Coolly assessing his own capacity and the strength of his domain, he judged that control of the Chugoku region was the most balanced position he could hold. He left his sons Kikkawa Motoharu and Kobayakawa Takakage a final instruction: "Defend your present domains to the death, and make the survival of the clan your highest priority," and ordered them to support the main Mori house. This thorough risk-avoidance and commitment to a grand strategy suited to his own true size continued to function even after Motonari's death, carried on by his two sons.
+`
+      },
+      uk: {
+        title: "Уроки даймьо (видатні полководці)",
+        body: `
+Японія XVI століття була епохою хаосу, коли після великих заворушень влада центрального уряду ослабла. У кожному регіоні впливові воїни фактично захопили владу над своєю територією, будували замки і створювали власні володіння за власними законами та власною силою. Таких людей називали даймьо. Цю епоху, коли володіння даймьо вели нескінченну боротьбу за виживання, називають періодом Сенґоку — «епохою воюючих провінцій». Даймьо епохи Сенґоку й донині лишаються героями своїх рідних земель, а філософія управління володінням, яку вони виробили серед цього хаосу, і сьогодні дає багато чого повчального сучасним японцям. Цього разу я хочу розповісти про досягнення та знамениті вислови шести найвидатніших даймьо цієї епохи.
+
+Ходзьо Соун
+
+[Профіль]
+Він став провісником даймьо епохи Сенґоку. Правив провінціями Ідзу і Сагамі (нині префектури Сідзуока і Канаґава). Піднявшись від дрібного чиновника ослабленого старого режиму — сьоґунату Муроматі, — він разом із шістьма соратниками побудував власну систему внутрішнього управління в регіоні Канто. Він знищив давнього правителя, відомого як Хорікое-кубо, захопив замок Одавара і заклав плацдарм, з якого згодом підкорив увесь Канто. Він значно знизив важкі податки, що тяжіли над селянами, і захистив їх, здобувши тверду народну підтримку.
+
+[Його знаменитий вислів]
+«Якщо хочеш, щоб тебе любили, треба від щирого серця цінувати людей».
+Коментар: Причина, через яку він зміг піднятися від дрібного чиновника до даймьо епохи Сенґоку, полягала не просто в завоюванні силою зброї, а в тому, що він щиро поважав закорінені інтереси та побут місцевих землевласників і селян Ідзу й Сагамі та зробив їх своїми союзниками. Цей вислів показує стратегію виживання Соуна: справжня суть того, що рухає людьми, — не в техніці, а у справжньому альтруїзмі.
+
+Такеда Сінген
+
+[Профіль]
+Він створив армію та державу такої досконалості, що її боявся кожен воєначальник епохи Сенґоку, і пізніше сьоґунат Едо наслідував саме її. Правив провінцією Кай (нині навколо префектури Яманасі). Маючи серед стратегів таких людей, як Ямамото Кансуке, він очолював найсильніший кавалерійський корпус своєї епохи і розгромив Токугаву Ієясу під Мікатаґахарою. Завдяки роботам із регулювання річок та впорядкуванню законів він захищав своїх підданих і здобув їхню підтримку й довіру. Сінген помер від хвороби під час походу на Кіото заради об'єднання країни під своєю владою. Його смерть значно вплинула на розстановку сил наступної епохи, і згодом, уже за часів його сина, його володіння знищив новий сильний правитель — Ода Нобунаґа.
+
+[Його знамениті вислови]
+«Люди — це замок, люди — це кам'яний мур, люди — це рів. Милосердя — союзник, жорстокість — ворог».
+Коментар: Це відображає філософію, за якою здатність знаходити видатних людей і завойовувати їхні серця і є найсильнішою системою оборони. Сінген набирав видатних самураїв як усередині свого володіння, так і поза ним, створивши загін васалів, відомий як «двадцять чотири полководці Такеда», кожен із яких мав свою сильну сторону. Ця система роботи з талантами та міцна побудована на ній держава стали зразком для всіх даймьо.
+
+«Якщо діяти — можна досягти. Якщо не діяти — не досягнеш нічого. Який же марний той, хто відмовляється від здійсненної справи, вважаючи її неможливою».
+Коментар: Сінген упродовж понад двадцяти років здійснював грандіозний проєкт регулювання річки Каманасі, яка раз у раз виходила з берегів через бурхливі потоки, — так звану «дамбу Сінгена». Цей епізод показує вперту, практичну здатність Сінгена доводити справу до кінця та його організаційне терпіння: якщо з самого початку не здаватися, вважаючи щось неможливим, а вперто продовжувати, цього неодмінно можна досягти.
+
+«Обидві сторони сварки караються однаково».
+Коментар: Той, хто розпочав приватну суперечку, карався разом із супротивником, незалежно від причини. Управління, яке ставило порядок у громаді вище за почуття «хто з них правий», принесло мирне життя провінції Кай.
+
+Ода Нобунаґа
+
+[Профіль]
+Найбільший новатор цієї епохи. Смерть Сінгена, який був для нього найбільшою загрозою, стала головним чинником його стрімкого піднесення. Піднявшись у провінції Оварі (префектура Айті), він правив центром Японії із замку Адзуті, збудованого на березі озера Біва. Він створив сучасні інституції одразу в політиці, економіці та релігії: систему кар'єрного росту за заслугами, захист християнства, вільну торговельну систему, що скасувала традиційні податки. Навіть на полі бою він зруйнував старі тактики, здійснюючи раптові атаки під прикриттям шуму дощу та розбиваючи кавалерію завдяки зосередженому застосуванню вогнепальної зброї. Він продовжував свої перетворення, навіть наживаючи ненависть закорінених інтересів, бо завжди дивився за межі моря. На самому порозі об'єднання країни його раптово зрадив Акечі Міцухіде, якому він довіряв найбільше, і він наклав на себе руки серед вогню храму Хонноджі в Кіото. Хто саме стояв за цією зрадою, лишається загадкою й досі.
+
+[Його знамениті вислови]
+«Нічого вже не вдієш».
+Коментар: Ці слова він сказав, дізнавшись про заколот свого найздібнішого васала, Акечі Міцухіде. Вони показують граничний прагматизм: миттєве прийняття своєї долі замість обговорення подальших дій. Нобунаґа підпалив храм і наклав на себе руки, але його тіло так і не знайшли серед вогню, тож Міцухіде не отримав голови — доказу самурайської перемоги. Через це Міцухіде не зміг стримати сум'яття в таборі Оди, і приблизно за десять днів зазнав поразки від Хасіби Хідейосі в битві при Ямадзакі, а під час втечі був убитий.
+
+«Роботу створюють. Її знаходять самі. Виконувати доручену роботу — доля простого вояка. Повернутися, не впоравшись із дорученням, — ознака дурня. А ти підібрав сміття, що лежало на дорозі, — це доволі похвально».
+Коментар: Нобунаґа був затятим ворогом закорінених інтересів. Він спалив живцем ченців гори Хіей і настоятеля Кайсена, які підтримували його ворогів, і скасував торговельні гільдії та митні застави. Філософія Нобунаґи полягала в тому, щоб здобувати свободу й перемогу силою та раціональним судженням, а не традицією. А для цього потрібно не просто виконувати роботу за наявними правилами, а помічати те непомітне сміття, що лежить просто тут, і усувати його.
+
+Токугава Ієясу
+
+[Профіль]
+Він поклав край епосі Сенґоку. Дочекавшись слушного моменту, він переміг усіх ворогів разом з усіма союзниками й заснував сьоґунат Едо. Його найбільшою зброєю були не розум, не походження, не жага до знань і не загін васалів, а терпіння. Він поєднав організацію, запозичену в Такеди Сінгена, раціональність, якої навчився в Нобунаґи, і приховані амбіції. Після смерті Нобунаґи, публічно присягаючи на вірність переможному дому Тойотомі, він потай розширював власну владну базу. Він навмисно дав об'єднатися тим, хто засуджував його за це, а тоді разом із власними союзниками дав вирішальну битву при Секіґахарі, у префектурі Ґіфу в самому серці Японії, і за шість годин бою здобув усе. Він заклав основи величезної системи — станового устрою та законів сьоґунату Едо, — що проіснувала 260 років, а в похилому віці прожив відведений йому вік, зберігаючи абсолютну владу.
+
+[Його знамениті вислови]
+«Тайра гине від Тайра, Камакура гине від Камакури».
+Коментар: Ієясу знав історію. Він на власні очі бачив, як Оду Нобунаґу зрадила людина, якій той довіряв найбільше, і як Тойотомі Хідейосі в останні роки життя розгублено метався через питання спадкоємства й помер, залишивши по собі малолітнього спадкоємця. Приблизно за чотириста років до його власної епохи так само загинув рід Тайра — провісники класу воїнів, а приблизно за двісті сімдесят років — сьоґунат Камакура, і обидва рази причиною стали поступовий занепад і зрада, породжені часом.
+
+«Хто вміє лише перемагати і не вміє програвати — тому зрештою зашкодить це самому».
+Коментар: Ієясу змолоду славився як вправний воїн. Та зазнав нищівної поразки перед непереможною кавалерією Такеди Сінгена під Мікатаґахарою і, за переказами, так злякався під час втечі, що навіть не втримав шлунок. Він наказав васалам намалювати портрет свого переляканого обличчя в ту мить і відтоді виріс у воїна на кшталт надзвичайно обережного шахіста, який ніколи не заспокоюється на жодній перемозі.
+
+Дате Масамуне
+
+[Профіль]
+Правив провінцією Муцу (нині регіон Тохоку). Втративши одне око через хворобу, здобув прізвисько Одноокий Дракон. Разом зі своїм найголовнішим стратегом Катакурою Каґецуною — тим самим, хто колись провів операцію з видалення цього ока, — він розбив клан Асіна під Суріаґехарою і за свого життя здобув давню мрію роду — панування над південним Осю. У битві при Секіґахарі він став на бік Токугави й сприяв перемозі як на полі бою, так і дипломатично. Заради виживання він на людях перебільшено присягав на вірність сильнішим, а за лаштунками плів усілякі інтриги. Його поведінка не була бездоганною, і в ньому була якась риса трикстера: міжнародне чуття, через яке він, маючи дозвіл сьоґунату, але керуючись власними розрахунками, відправив дипломатичну місію до Іспанії й Рима; азартний інстинкт угадувати переможця, через який він до останнього не схиляв коліна перед Тойотомі; а ще, стоячи на боці Токугави, він наказав своєму васалу Катакурі Сіґенаґа таємно захистити осиротілу дитину Санади Нобусіґе, який воював проти них в облозі Осаки, — ніби про всяк випадок. У похилому віці він, як старійшина сьоґунату Едо, був улюбленцем молодого сьоґуна.
+
+[Його знамениті вислови]
+«Надмір гуманності робить слабким. Надмір справедливості робить негнучким. Надмір етикету стає підлабузництвом. Надмір мудрості змушує брехати. Надмір довіри призводить до збитків».
+Коментар: Це про п'ять конфуціанських чеснот. Настанова не ганятися даремно за чеснотою чи заслугами, а уникати крайнощів і бути гнучкою людиною зі збалансованим поглядом на речі — це сміливе й по-справжньому масамунівське прозріння.
+
+«Якщо думати, що прийшов у цей світ лише гостем, жодні труднощі вже не страшні».
+Коментар: Страждання народжується з прив'язаності до власного життя, становища й майна як до того, чим володієш вічно. Відсторонений погляд Масамуне на життя і смерть полягав у тому, що коли вважати себе лише тимчасовим «гостем» у цьому світі, то будь-яку скруту чи втрату можна прийняти спокійно.
+
+Морі Мотонарі
+
+[Профіль]
+Володар західної Японії. Найвищий втілювач військового мистецтва Сунь-дзи. У стратегії й побудові інституцій у японській історії немає нікого, хто перевершив би його. Це — улюблений, безумовний фаворит самого Наоміті. Правлячи з провінції Акі (нині префектура Хіросіма), він підкорив більшу частину регіону Тюгоку. У битві при Іцукусімі завдяки попередній інформаційній маніпуляції та блискучій хитрості з використанням флоту він розгромив значно більшу армію. Крім того, він віддав двох своїх обдарованих синів у прийомні сини в знатні роди Кіккава та Кобаякава, фактично підпорядкувавши собі обидва доми. Зробивши дім Морі політичним центром, а Кіккаву — сухопутною армією, Кобаякаву — флотом, він побудував систему правління, засновану на кровних зв'язках роду Мотонарі. Ця система «двох річок Морі» стала основою для відомої притчі про братерські узи — повчання про три стріли. Дім Морі, що піднявся як даймьо епохи Сенґоку за часів Мотонарі, пережив період Едо як володіння Тьошю, а наприкінці епохи Едо став осередком руху за повалення сьоґунату.
+
+[Його знамениті вислови]
+«Багато хитрощів — перемога, мало хитрощів — поразка».
+Коментар: У битві при Іцукусімі Мотонарі розбив приблизно двадцятитисячне військо силами лише близько чотирьох тисяч чоловік, ставши володарем регіону Тюгоку. Мотонарі скористався переворотом (інцидентом у храмі Тайнейджі), під час якого Суе Харуката, старший васал могутнього клану Оуті, вбив свого пана Оуті Йосітаку, і завдяки цьому розширив свою владу. Потім він спровокував самого Суе Харукату, заманивши його величезне військо на острів Іцукусіма, оточений заплутаними мілинами. У фальшивому замку, зведеному на Іцукусімі, він розмістив воєначальника, що мав особисті рахунки із Суе Харукатою. Більш того, перед шпигуном Суе Харукати він розіграв удаваний жаль, нібито спорудження цього фальшивого замку було помилкою, поширивши дезінформацію, щоб замок виглядав слабким місцем. Коли Суе Харуката обложив замок на Іцукусімі, Мотонарі оточив острів і знищив ворога. Усіх, хто намагався втекти, перебили в морі. Мотонарі таємно уклав союз із піратами Внутрішнього Японського моря — флотом Мураками — і того дня заблокував Іцукусіму з моря. А шпигуна, за переказами, повідомили: «Дякуємо за зраду», після чого відрубали йому голову й кинули в море. Цей вислів звучить майже як філософія, що пояснює легендарну перемогу при Іцукусімі.
+
+«Не змагатися за владу над усією країною».
+Коментар: Навіть ставши володарем регіону Тюгоку, Мотонарі суворо заборонив необачно рухатися до центру (Кіото), щоб претендувати на владу над усією країною. Холодно оцінивши власні здібності та силу свого володіння, він вирішив, що контроль над регіоном Тюгоку — найзбалансованіший стан, якого можна досягти. Синам Кіккаві Мотохару та Кобаякаві Такакаґе він залишив настанову: «Захищайте нинішні володіння до останнього і понад усе ставте виживання роду», наказавши їм підтримувати головний дім Морі. Ця послідовна відмова від ризику та неухильне дотримання стратегії, що відповідала реальним можливостям роду, продовжувала діяти силами двох синів навіть після смерті Мотонарі.
+`
+      }
+    }
+  },
+  {
     date: "2026.11.08",
     title: "カサンドラとアナキン",
     body: `
